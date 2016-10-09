@@ -1,0 +1,25 @@
+
+  {{ partial "default_head.html" . }}
+
+          <div class="section-layout--sloping-bottom-left hero typeset">
+              <div class="hero__layout container">
+                    <h1 class="hero__header">Handpicked speakers. Well seasoned.</h1>
+                    <p class="caption">Speakers who've worked at companies like <i>Apple</i>, <i>Dropbox</i>, <i>Twitter</i> and <i>SalesforceUX</i>.</p>
+              </div>
+          </div>
+    		<div class="content-wrapper">
+                <div class="section-layout">
+                    <section class="section typeset container">
+                            <div class="speaker-grid">
+                                {{ range sort .Data.Pages ".Date" "asc" }}
+                                {{ .Render "li" }}
+                                {{ end }}
+                            </div>
+                    </section>
+                </div>
+
+
+    		</div>
+
+
+  {{ partial "default_foot.html" . }}

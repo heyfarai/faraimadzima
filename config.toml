@@ -1,0 +1,8 @@
+baseurl = "http://faraimadzima.com/"
+languageCode = "en-us"
+publishdir = "__build"
+title = "Farai Madzima - UX Guy"
+theme = "uxguy"
+[Params]
+  Author = "Farai Madzima"
+  GoogleAnalyticsUserID = "UA-72813434-1"

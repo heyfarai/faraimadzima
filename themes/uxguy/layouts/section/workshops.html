@@ -1,0 +1,50 @@
+
+  {{ partial "default_head.html" . }}
+
+          <div class="section-layout--sloping-bottom-left hero typeset">
+              <div class="hero__layout container">
+                <h1 class="hero__header">Master-Grade Full-Day Workshops.</h1>
+                <p class="caption">Dive deep into your practice. Perfect for teams and individuals.</p>
+              </div>
+          </div>
+    		<div class="content-wrapper">
+
+                <div class="section-layout">
+                    <section class="section typeset container">
+                        <article class="article--single">
+                            {{ range sort .Data.Pages ".Date" "asc" }}
+                            <div class="workshop-summary">
+                                <h2 class="workshop__title"><a href="/workshops/{{ .Slug }}">{{.Title }}</a></h2>
+                                <p class="caption caption--centered">Wednesday 14 September, 9am-4pm</p>
+                                <div class="workshop__speakers">
+                                    {{ range .Params.speakers }}
+                                    <div class="chip speaker-chip speaker-chip--inline">
+                                        <a href="/speakers/{{ . | urlize }}">
+                                            <img class="speaker-chip__photo" src="/img/speakers/{{ . | urlize }}.jpg" />
+                                            <div class="speaker-chip__meta">
+                                                <span class="speaker-chip__name">{{ . }}</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    {{ end }}
+                                </div>
+                                <div >
+                                        <a class="workshop__link" href="/workshops/{{ .Slug }}">
+                                            {{ .Summary }}
+                                        </a>
+                                        <div class="workshop__actions">
+                                            <a href="/workshops/{{ .Slug }}" class="button button--primary">Learn more</a>
+                                        </div>
+
+                                </div>
+    						</div>
+                            {{ end }}
+                        </article>
+                    </section>
+                </div>
+
+
+    		</div>
+
+
+  {{ partial "default_foot.html" . }}

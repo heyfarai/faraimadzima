@@ -1,0 +1,59 @@
+
+  {{ partial "default_head.html" . }}
+
+            <div class="section-layout--sloping-bottom-left hero typeset">
+              <div class="hero__layout container">
+                    <div class="speaker-detail-header">
+                        <h1 class="hero__header">{{ .Title }}</h1>
+                        <p class="caption">A full day workshop. Wednesday 14 Sept.</p>
+                        <div class="workshop__speakers workshop__speakers--hero">
+
+                                {{ range .Params.speakers }}
+                                <div class="chip speaker-chip speaker-chip--inline">
+                                    <a class="light" href="/speakers/{{ . | urlize }}">
+                                        <img class="speaker-chip__photo" src="/img/speakers/{{ . | urlize }}.jpg" />
+                                        <div class="speaker-chip__meta">
+                                            <span class="speaker-chip__name">{{ . }}</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                {{ end }}
+                        </div>
+                    </div>
+              </div>
+            </div>
+    		<div class="content-wrapper">
+                <div class="section-layout">
+                    <section class="section typeset container">
+                        <article class="article article--single blog-article">
+                            {{ .Content }}
+
+                        </article>
+                    </section>
+                </div>
+                <div class="section-layout section-layout--two-slopes section-layout--pink">
+                    <section class="section typeset container">
+                        <div class="row">
+                            <div class="one-half column">
+                                <h5>Full day workshops include:</h5>
+                                <ul>
+                                    <li>Snacks and drinks all day</li>
+                                    <li>Lunch</li>
+                                </ul>
+                                <h5>You should bring:</h5>
+                                <ul>
+                                    <li>Your laptop</li>
+                                    <li>Your laptop charger</li>
+                                </ul>
+                            </div>
+                            <div class="one-half column">
+                                <h5>Workshop tickets</h5>
+                                <p>Tickets for the one day workshops are <strong>R3,500.00</strong> (including VAT). Workshop tickets are valid for the workshop only. To attend the conference days an extra ticket is needed.<br> All workshops start at 9:00am and end at 4:00pm.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+    		</div>
+
+
+  {{ partial "default_foot.html" . }}

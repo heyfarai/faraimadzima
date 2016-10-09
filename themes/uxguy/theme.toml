@@ -1,0 +1,9 @@
+name = "pixelup2016"
+license = "MIT"
+licenselink = "https://github.com/dim0627/hugo_theme_robust/blob/master/LICENSE.md"
+description = ""
+min_version = 0.15
+
+[author]
+    name = "Farai Madzima"
+    homepage = "http://pixelup.co.za"

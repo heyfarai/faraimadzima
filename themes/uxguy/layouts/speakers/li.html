@@ -1,0 +1,12 @@
+<div class="speaker-grid__item">
+    <a class="speaker-grid__link" href="/speakers/{{ .Slug }}">
+        <figure class="tint">
+            <img class="speaker-grid__photo photo" src="/img/speakers/{{ .Slug }}.jpg" alt="{{ .Params.name }}'s Mugshot"/>
+        </figure>
+        <div class="speaker-grid__details">
+            <span class="speaker-grid__name">{{ .Params.name }}</span>
+            <span class="speaker-grid__title">{{ .Params.jobtitle }}</span>
+            <span class="speaker-grid__company">{{ if isset .Params "company" }}{{ .Params.company }},{{ end }} {{ .Params.city }}</span>
+        </div>
+    </a>
+</div>

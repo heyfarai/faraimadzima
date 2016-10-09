@@ -1,0 +1,41 @@
+
+  {{ partial "default_head.html" . }}
+
+            <div class="section-layout--sloping-bottom-left hero typeset">
+              <div class="hero__layout container">
+                    <div class="speaker-detail-header">
+                        <img id="speaker-detail-header__photo" class="speaker-detail-header__photo" src="/img/speakers/{{ .Slug }}.jpg"/>
+                        <h1 class="hero__header">{{ .Params.name }}</h1>
+                        <h6>{{ .Params.tagline }}</h6>
+                        <p class="caption">{{ .Params.jobtitle }}{{ if isset .Params "company" }} at {{ .Params.company }}{{ end }}, {{ .Params.city }}</p>
+                    </div>
+              </div>
+            </div>
+    		<div class="content-wrapper">
+                <div class="section-layout">
+                    <section class="section typeset container">
+                        <article class="article article--single blog-article">
+                            {{ .Content }}
+                            <h6>On the web</h6>
+                            <ul class="no-bullet">
+                                {{ if isset .Params "website" }}<li><a href="{{ .Params.website }}">{{ .Params.website }}</a></li>{{ end }}
+                                {{ if isset .Params "twitter" }}<li><a href="https://twitter.com/{{ .Params.twitter }}">{{ .Params.twitter }}</a></li>{{ end }}
+                            </ul>
+                        </article>
+                    </section>
+                </div>
+                <div class="section-layout section-layout--two-slopes section-layout--blue">
+                    <!-- {% include 'templates/mixins/become-a-sponsor.html' %} -->
+                    <section class="section typeset container">
+                        <h2>More Speakers</h2>
+                        <div class="featured-speaker-list">
+                            {{ range last 4 (where .Site.Pages ".Section" "speakers") }}
+                                {{ .Render "li" }}
+                            {{ end }}
+                        </div>
+                    </section>
+                </div>
+    		</div>
+
+
+  {{ partial "default_foot.html" . }}

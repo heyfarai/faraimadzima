@@ -1,0 +1,44 @@
+[
+    {
+        "name" : "FreeThinking",
+        "url" : "http://freethinking.co.za",
+        "logo_url" : "/img/sponsors/freethinking.png",
+        "description" : ""
+    },
+    {
+        "name" : "Accenture",
+        "url" : "http://accenture.com",
+        "logo_url" : "/img/sponsors/accenture.png",
+        "description" : ""
+    },
+    {
+        "name" : "Proto.io",
+        "url" : "http://proto.io",
+        "logo_url" : "/img/sponsors/proto_io.png",
+        "description" : ""
+    },
+    {
+        "name" : "MarkLives",
+        "url" : "http://marklives.com",
+        "logo_url" : "/img/sponsors/marklives.png",
+        "description" : ""
+    },
+    {
+        "name" : "Axure",
+        "url" : "http://axure.com",
+        "logo_url" : "/img/sponsors/axure.png",
+        "description" : ""
+    },
+    {
+        "name" : "Maverick Mind",
+        "url" : "http://maverickmind.com",
+        "logo_url" : "/img/sponsors/maverick-mind.png",
+        "description" : ""
+    },
+    {
+        "name" : "Rosenfeld",
+        "url" : "http://rosenfeld.com",
+        "logo_url" : "/img/sponsors/rosenfeld.png",
+        "description" : ""
+    }
+]
