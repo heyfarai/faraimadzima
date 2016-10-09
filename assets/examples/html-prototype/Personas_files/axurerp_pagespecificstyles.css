@@ -1,0 +1,438 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0 {
+    position:absolute;
+    left:40px;
+    top:68px;
+    width:680px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u1 {
+    position:absolute;
+    left:40px;
+    top:28px;
+    width:530px;
+    height:18px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:40px;
+    top:150px;
+    width:770px;
+    height:91px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3_normal {
+    background-image: url('../Personas_files/u3_normal.png');
+}
+
+.u3_container {
+    position:absolute;
+    left:50px;
+    top:1310px;
+    width:72px;
+    height:166px;
+}
+
+#u3_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:72px;
+    height:166px;
+}
+
+.u4 {
+    position:absolute;
+    left:2px;
+    top:75px;
+    width:68px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5_normal {
+    background-image: url('../Personas_files/u5_normal.png');
+}
+
+.u5_container {
+    position:absolute;
+    left:49px;
+    top:680px;
+    width:85px;
+    height:195px;
+}
+
+#u5_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:85px;
+    height:195px;
+}
+
+.u6 {
+    position:absolute;
+    left:2px;
+    top:90px;
+    width:81px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7_normal {
+    background-image: url('../Personas_files/u7_normal.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:40px;
+    top:277px;
+    width:90px;
+    height:171px;
+}
+
+#u7_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:90px;
+    height:171px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:78px;
+    width:86px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9_normal {
+    background-image: url('../Personas_files/u9_normal.png');
+}
+
+.u9_container {
+    position:absolute;
+    left:54px;
+    top:1116px;
+    width:75px;
+    height:169px;
+}
+
+#u9_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:75px;
+    height:169px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:76px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11_normal {
+    background-image: url('../Personas_files/u11_normal.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:54px;
+    top:910px;
+    width:85px;
+    height:174px;
+}
+
+#u11_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:85px;
+    height:174px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:79px;
+    width:81px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13_normal {
+    background-image: url('../Personas_files/u13_normal.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:50px;
+    top:481px;
+    width:84px;
+    height:179px;
+}
+
+#u13_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:84px;
+    height:179px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:82px;
+    width:80px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15 {
+    position:absolute;
+    left:180px;
+    top:280px;
+    width:580px;
+    height:42px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16 {
+    position:absolute;
+    left:180px;
+    top:341px;
+    width:540px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17 {
+    position:absolute;
+    left:180px;
+    top:484px;
+    width:700px;
+    height:42px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18 {
+    position:absolute;
+    left:180px;
+    top:545px;
+    width:540px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19 {
+    position:absolute;
+    left:190px;
+    top:918px;
+    width:750px;
+    height:42px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20 {
+    position:absolute;
+    left:190px;
+    top:980px;
+    width:630px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21 {
+    position:absolute;
+    left:190px;
+    top:700px;
+    width:750px;
+    height:42px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22 {
+    position:absolute;
+    left:190px;
+    top:761px;
+    width:540px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23 {
+    position:absolute;
+    left:190px;
+    top:1121px;
+    width:830px;
+    height:42px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24 {
+    position:absolute;
+    left:190px;
+    top:1183px;
+    width:630px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25 {
+    position:absolute;
+    left:190px;
+    top:1318px;
+    width:870px;
+    height:42px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26 {
+    position:absolute;
+    left:190px;
+    top:1380px;
+    width:630px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

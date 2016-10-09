@@ -1,0 +1,122 @@
+body {
+	color: #333;
+	font-size: 1.143em;
+	line-height: 1.65em;
+}
+.jumbotron {
+	color: white;
+	text-align: center;
+	background: #020031;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
+	background: -moz-linear-gradient(45deg, #020031 0%, #6D3353 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6D3353));
+	background: -webkit-linear-gradient(45deg, #020031 0%,#6D3353 100%);
+	background: -o-linear-gradient(45deg, #020031 0%,#6D3353 100%);
+	background: -ms-linear-gradient(45deg, #020031 0%,#6D3353 100%);
+	background: linear-gradient(45deg, #020031 0%,#6D3353 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 );
+	-webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+	-moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+}
+	.jumbotron h1 {
+		font-size: 80px;
+		font-weight: bold;
+		letter-spacing: -1px;
+		line-height: 1;
+		margin: 0em 0px 0.37em;
+	}
+	.jumbotron p {
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 30px;
+		margin: 0px 0 2em;
+	}
+.sidebar {
+	margin-top: 2.2em;
+	color: #888
+}
+section {
+	border-top: 1px solid #e4e4e4;
+	padding-bottom: 2em;
+}
+.section-lead small{
+	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif, cursive;
+	color: black;
+	font-size: 1.3em;
+}
+.section-lead {
+	margin: 1.3em 0 0.7em;
+}
+.op {
+	background: #ddd
+}
+.post {
+	padding: 0em;
+	border: 1px solid #E0E0E0;
+	border-radius: 2px;
+
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	background: #fff;
+	margin-bottom: 1.5em
+}
+	.post .caption {
+		padding:1em 1.8em   ;
+		background: #f4f4f4
+	}
+.post .meta{
+	font-size: .9em
+}
+.post a img {
+	margin: .2em 1em .5em 0;
+
+}
+.thumbnail p {
+	font-size: .8em;
+	text-align: center;
+	margin-top: 1em
+}
+.thumbnail p span {
+	font-weight: bold
+}
+.contact-details {
+	font-size: .8em
+}
+header {
+	height: 220px;
+	background: #e4e4e4;
+	padding: 2em 0 0 2em
+}
+#navbar {
+	padding: .2em;
+}
+.navbar {
+	background: #e4e4e4;
+	margin-bottom: 0;
+	font-size: .8em
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+.navbar {
+	background: #e4e4e4;
+	margin-bottom: 0;
+	font-size: .8em
+}
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+
+
+.navbar {
+	background: #e4e4e4;
+	margin-bottom: 0;
+	font-size: .8em
+}
+
+}
