@@ -1,0 +1,351 @@
+
+  {{ partial "default_head.html" . }}
+
+          <div class="section-layout--sloping-bottom-left hero typeset">
+              <div class="hero__layout container">
+                <h1 class="hero__header">{{ .Title }}</h1>
+                {{ if isset .Params "title_caption" }}<p class="caption">{{ .Params.title_caption }}</p>{{ end }}
+              </div>
+          </div>
+    		<div class="content-wrapper">
+                {{ if isset .Params "isslack"}}
+                    <!--CSS styles that ensure your typeform takes up all the available screen space (DO NOT EDIT!)-->
+                    <style type="text/css">
+                        html{
+                          margin: 0;
+                          height: 100%;
+                          overflow: hidden;
+                          background: #1c2567;
+                        }
+                        .iframe-wrapper {
+                              position: absolute;
+                              left:0;
+                              right:0;
+                              bottom:0;
+                              top:0;
+                              border:0;
+                              z-index: 999;
+                              background: #1c2567;
+                        }
+                        iframe{
+                          position: absolute;
+                          left:0;
+                          right:0;
+                          bottom:0;
+                          top:0;
+                          border:0;
+                          z-index: 1000
+                        }
+                    </style>
+                    <div class="iframe-wrapper">
+                        <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://pixelup.typeform.com/to/fMa60z"></iframe>
+                    </div>
+                    <script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js"></script>
+                {{ end }}
+
+                {{ if isset .Params "issponsorship"}}
+                <div class="section-layout section-layout--no-padding">
+                    <section class="section typeset container">
+                        <h2>Premier Sponsor</h2>
+
+                        <img class="sponsor-logo sponsor-logo--premier" src="/img/sponsors/freethinking.png">
+
+                    </section>
+                </div>
+                <div class="section-layout">
+                    <section class="section typeset container">
+                        <h2>Who will attend</h2>
+                        <p>We created PIXEL UP! primarily for experienced professionals designing and developing apps and websites in large corporations or agencies. We expect 200 attendees mostly from Southern Africa.</p>
+                        <strong>Job titles include:</strong>
+                        <div class="row">
+                            <div class="one-half column">
+                                <ul>
+                                    <li>CTO (Chief Technical Officer)</li>
+                                    <li>Head of UX</li>
+                                    <li>Head of Online</li>
+                                    <li>Head of Digital</li>
+                                    <li>UX Manager</li>
+                                    <li>UX Analyst</li>
+                                    <li>Product Manager</li>
+                                </ul>
+                            </div>
+                            <div class="one-half column">
+                                <ul>
+                                    <li>Senior Information Architect</li>
+                                    <li>User Experience Designer</li>
+                                    <li>Usability Consultant</li>
+                                    <li>Interaction Designer</li>
+                                    <li>iOS / Android Developer</li>
+                                    <li>Web Developer</li>
+                                    <li> Business Analyst</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                {{ end }}
+                {{ if not .Params.issponsorship }}
+                    {{ if .Content}}
+                <div class="section-layout">
+                    <section class="section typeset container">
+                        <article class="article--single">
+                        {{ .Content }}
+                        </article>
+                    </section>
+                    {{ end }}
+                </div>
+                {{ end }}
+
+                {{ if isset .Params "isschedule"}}
+                <div class="section-layout section-layout--no-padding">
+                    <section class="section typeset container">
+                        <div class="Tab-nav active">
+                            <a class="Tab-nav-item" href="#day-one">Day One</a>
+                            <a class="Tab-nav-item" href="#day-two">Day Two</a>
+                            <a class="Tab-nav-item" href="#day-three">Day Three</a>
+                        </div>
+                        <section class="event-day" id="day-one" ng-show="isCurrentTab(1)">
+                            <h2><span>Monday, Sept. 12</span></h2>
+                            <p>Along with the continental breakfast, you’ll get an amazing lunch, beverage breaks and nibbles throughout the day.</p>
+                            <div class="Listing">
+                                <span class="Listing-meta">07:30 - 08:55</span>
+                                <div class="Card Card--listing Listings-0 Card--listing-break">
+                                    <a href="/speakers/" class="Listing-title"><strong>Breakfast</strong></a>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">09:00 - 09:45</span>
+                                <div class="Card Card--listing Listings-1 ">
+                                    <a href="/speakers/rebecca-garza-bortman" class="Listing-title"><strong>Designed to Make a Difference: 3 Stories of Pixels, Personalities, and Rock &amp; Roll</strong></a>
+
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/rebecca-garza-bortman"><img class="Card-image " src="/img/speakers/rebecca-garza-bortman.jpg" alt="Rebecca Garza-Bortman"></a>
+                                        <span class="Card-title p-name">Rebecca Garza-Bortman</span>
+                                        <p class="Card-copy caption">Lead Designer, Masterclass</p>
+                                    </div>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">10:00 - 10:45</span>
+                                <div class="Card Card--listing Listings-1 ">
+                                    <a href="/speakers/dan-mall" class="Listing-title"><strong>Table Setting Guides for Great Design</strong></a>
+
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/dan-mall"><img class="Card-image " src="/img/speakers/dan-mall.jpg" alt="Dan Mall"></a>
+                                        <span class="Card-title p-name">Dan Mall</span>
+                                        <p class="Card-copy caption">Founder &amp; Director, SuperFriendly</p>
+                                    </div>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">11:00 - 11:45</span>
+                                <div class="Card Card--listing Listings-1 ">
+                                    <a href="/speakers/emma-van-niekerk" class="Listing-title"><strong>Effective design strategies for Agile and Lean environments</strong></a>
+
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/emma-van-niekerk"><img class="Card-image " src="/img/speakers/emma-van-niekerk.jpg" alt="Emma van Niekerk"></a>
+                                        <span class="Card-title p-name">Emma van Niekerk</span>
+                                        <p class="Card-copy caption">Director of Design (Growth), Intercom</p>
+                                    </div>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">11:45 - 13:00</span>
+                                <div class="Card Card--listing Listings-0 Card--listing-break">
+                                    <a href="/speakers/" class="Listing-title"><strong>Lunch</strong></a>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">13:15 - 13:45</span>
+                                <div class="Card Card--listing Listings-1 ">
+                                    <a href="/speakers/warwick-gill" class="Listing-title"><strong>Design in South Africa is Broken</strong></a>
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/warwick-gill"><img class="Card-image " src="/img/speakers/warwick-gill.jpg" alt="Warwick Gill"></a>
+                                        <span class="Card-title p-name">Warwick Gill</span>
+                                        <p class="Card-copy caption">Principal Consultant, FreeThinking</p>
+                                    </div>
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">14:15 - 15:00</span>
+                                <div class="Card Card--listing Listings-1 ">
+                                    <a href="/speakers/william-van-hecke" class="Listing-title"><strong>Your App Is Good And You Should Feel Good</strong></a>
+
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/william-van-hecke"><img class="Card-image " src="/img/speakers/william-van-hecke.jpg" alt="William van Hecke"></a>
+                                        <span class="Card-title p-name">William van Hecke</span>
+                                        <p class="Card-copy caption">Product Designer, Facebook</p>
+                                    </div>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">15:15 - 16:00</span>
+                                <div class="Card Card--listing Listings-1 ">
+                                    <a href="/speakers/jon-bell" class="Listing-title"><strong>Last Talk of the Day But It'll Be Great I Promise</strong></a>
+
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/jon-bell"><img class="Card-image " src="/img/speakers/jon-bell.jpg" alt="Jon Bell"></a>
+                                        <span class="Card-title p-name">Jon Bell</span>
+                                        <p class="Card-copy caption">Staff Product Designer, Twitter</p>
+                                    </div>
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">16:00 - 17:00</span>
+                                <div class="Card Card--listing Listings-0 ">
+                                    <a href="/speakers/" class="Listing-title"><strong>Accenture Service Design Masterclass</strong></a>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">16:30 - 22:00</span>
+                                <div class="Card Card--listing Listings-0 Card--listing-break">
+                                    <a href="/speakers/" class="Listing-title"><strong>A bit of a party 'til later</strong></a>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                        </section>
+                        <section class="event-day" id="day-two">
+                            <h2><span>Tuesday, Sept. 13</span></h2>
+                            <p>Along with the continental breakfast, you’ll get an amazing lunch, beverage breaks and nibbles throughout the day.</p>
+                            <div class="Listing">
+                                <span class="Listing-meta">07:30 - 08:55</span>
+                                <div class="Card Card--listing Listings-0 Card--listing-break">
+                                    <a href="/speakers/" class="Listing-title"><strong>Breakfast</strong></a>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">09:00 - 09:45</span>
+                                <div class="Card Card--listing Listings-1 ">
+                                    <a href="/speakers/jina-bolton" class="Listing-title"><strong>Designing a Design System</strong></a>
+
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/jina-bolton"><img class="Card-image " src="/img/speakers/jina-bolton.jpg" alt="Jina Bolton"></a>
+                                        <span class="Card-title p-name">Jina Bolton</span>
+                                        <p class="Card-copy caption">Lead Designer, Design Systems, Salesforce</p>
+                                    </div>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">10:00 - 10:45</span>
+                                <div class="Card Card--listing Listings-1 ">
+                                    <a href="/speakers/pascal-auberson" class="Listing-title"><strong>Interacting in Virtual Reality</strong></a>
+
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/pascal-auberson"><img class="Card-image " src="/img/speakers/pascal-auberson.jpg" alt="Pascal Auberson"></a>
+                                        <span class="Card-title p-name">Pascal Auberson</span>
+                                        <p class="Card-copy caption">VR 3D Developer, Lumacode</p>
+                                    </div>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">11:00 - 11:45</span>
+                                <div class="Card Card--listing Listings-1 ">
+                                    <a href="/speakers/brad-frost" class="Listing-title"><strong>Style Guide Best Practices </strong></a>
+
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/brad-frost"><img class="Card-image " src="/img/speakers/brad-frost.jpg" alt="Brad Frost"></a>
+                                        <span class="Card-title p-name">Brad Frost</span>
+                                        <p class="Card-copy caption">Web designer &amp; Consultant, Web designer</p>
+                                    </div>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">11:45 - 13:15</span>
+                                <div class="Card Card--listing Listings-0 Card--listing-break">
+                                    <a href="/speakers/" class="Listing-title"><strong>Lunch</strong></a>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">13:15 - 14:00</span>
+                                <div class="Card Card--listing Listings-1 ">
+                                    <a href="/speakers/rob-gardziel" class="Listing-title"><strong>Proving the business value of design</strong></a>
+
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/rob-gardziel"><img class="Card-image " src="/img/speakers/rob-gardziel.jpg" alt="Rob Gardziel"></a>
+                                        <span class="Card-title p-name">Rob Gardziel</span>
+                                        <p class="Card-copy caption">Design Director, Designmap</p>
+                                    </div>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">14:15 - 15:15</span>
+                                <div class="Card Card--listing Listings-1 ">
+                                    <a href="/speakers/yonatan-kelib" class="Listing-title"><strong>The importance and impact of diversity within design teams.</strong></a>
+
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/yonatan-kelib"><img class="Card-image " src="/img/speakers/yonatan-kelib.jpg" alt="Yonatan Kelib"></a>
+                                        <span class="Card-title p-name">Yonatan Kelib</span>
+                                        <p class="Card-copy caption">Senior Service Designer, FJORD</p>
+                                    </div>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">15:15 - 16:15</span>
+                                <div class="Card Card--listing Listings-1 ">
+                                    <a href="/speakers/martin-pedrick" class="Listing-title"><strong>KEYNOTE — Interface Design: Then, Now, and Next</strong></a>
+
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/martin-pedrick"><img class="Card-image " src="/img/speakers/martin-pedrick.jpg" alt="Martin Pedrick"></a>
+                                        <span class="Card-title p-name">Martin Pedrick</span>
+                                        <p class="Card-copy caption">Design Lead, Dropbox</p>
+                                    </div>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                        </section>
+                        <section class="event-day" id="day-three" >
+                            <h2><span>Wednesday, Sept. 14</span></h2>
+                            <p>Day 3 is workshop day. All day workshops starting at 9am and ending at 4pm. Go beyond inspiration and immerse yourself in groundbreaking design &amp; development skills you won’t find anywhere else. Get your team on the same page with proven methods, tools and clear-cut direction on specific actions and skills. </p>
+                            <div class="Listing">
+                                <span class="Listing-meta">09:00 - 16:30</span>
+                                <div class="Card Card--listing Listings-1 ">
+                                    <a href="/speakers/brad-frost" class="Listing-title"><strong>Everything You Wanted to Know About Responsive Design...And Less!</strong></a>
+
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/brad-frost"><img class="Card-image " src="/img/speakers/brad-frost.jpg" alt="Brad Frost"></a>
+                                        <span class="Card-title p-name">Brad Frost</span>
+                                        <p class="Card-copy caption">Web designer &amp; Consultant, Web designer</p>
+                                    </div>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                            <div class="Listing">
+                                <span class="Listing-meta">09:00 - 16:30</span>
+                                <div class="Card Card--listing Listings-2 ">
+                                    <a href="/speakers/jon-bell" class="Listing-title"><strong>UX Launchpad - Design Play</strong></a>
+
+                                    <div class="Listing-body ">
+                                        <a href="/speakers/jon-bell"><img class="Card-image " src="/img/speakers/jon-bell.jpg" alt="Jon Bell"></a>
+                                        <span class="Card-title p-name">Jon Bell</span>
+                                        <p class="Card-copy caption">Staff Product Designer, Twitter</p>
+                                    </div>
+
+                                    <div class="Listing-body Listing-body--second-listing">
+                                        <a href="/speakers/william-van-hecke"><img class="Card-image Card-image--second-listing" src="/img/speakers/william-van-hecke.jpg" alt="William van Hecke"></a>
+                                        <span class="Card-title p-name">William van Hecke</span>
+                                        <p class="Card-copy caption">Product Designer, Facebook</p>
+                                    </div>
+
+                                </div><!--/.Card Card--listing-->
+                            </div>
+                        </section>
+                    </section>
+                </div>
+                {{ end }}
+    		</div>
+
+  {{ partial "default_foot.html" . }}

@@ -1,0 +1,52 @@
+
+  {{ partial "default_head.html" . }}
+
+            {{ $author := .Params.author }}
+            {{ $authorSlug :=  $author | urlize  }}
+            <div class="section-layout--sloping-bottom-left hero typeset">
+              <div class="hero__layout container">
+                <h1 class="hero__header post-hero">
+                    <small><a href="/blog">PIXEL UP! Blog</a></small><br/>
+                    {{ .Title }}
+                </h1>
+                <div class="author-content">
+                    <img alt="" src="/img/people/{{ $authorSlug }}.jpg" srcset="/img/people/{{ $authorSlug }}.jpg" class="avatar avatar--round avatar--small avatar--gray photo" height="234" width="234" originals="234" scale="2">
+                    <p class="caption">by <span itemprop="author">{{ $author }}</span> </p>
+                </div>
+              </div>
+            </div>
+    		<div class="content-wrapper">
+                <div class="section-layout">
+                    <section class="section typeset container">
+                        <article class="article article--single blog-article">
+                            {{ .Content }}
+                            <div class="article__footer">
+                                <div class="author-card">
+                                    <h6>Author</h6>
+                                        <div class="author-block" itemscope="" itemptype="http://schema.org/Person">
+                                            {{ if eq .Params.author "Justine de Jager"}}
+                            		        <span itemprop="image"><img class="author-block__image" alt="" src="/img/people/justine-de-jager.jpg" srcset="/img/people/justine-de-jager.jpg" height="234" width="234" originals="234" scale="2"></span>
+                                    		<div class="author-block__author-details">
+                                    			<span itemprop="name"><strong>Justine de Jager</strong>, Senior UX Designer</span><br>
+                                                    Justine is a UX Designer who focuses on experiences in the banking sector. Justine loves coffee, meeting new people and travelling to/living on tropical islands.
+                                    			<p class="author-social-media"><a class="social-link no-redirect" target="_blank" rel="nofollow" href="https://twitter.com/@GroundedNomad">Follow me on Twitter</a></p>
+                                    		</div>
+                                            {{ end }}
+                                            {{ if eq .Params.author "Farai Madzima"}}
+                            		        <span itemprop="image"><img class="author-block__image" alt="" src="https://res.cloudinary.com/hgsvo141e/image/upload/v1464992788/farai-madzima.jpg" srcset="https://res.cloudinary.com/hgsvo141e/image/upload/v1464992788/farai-madzima.jpg" height="234" width="234" originals="234" scale="2"></span>
+                                    		<div class="author-block__author-details">
+                                    			<span itemprop="name"><strong>Farai Madzima</strong>, Head of Experience Design at PIXEL UP!</span><br>
+                                                    I want to improve how people in Africa think about and make digital products.
+                                    			<p class="author-social-media"><a class="social-link no-redirect" target="_blank" rel="nofollow" href="https://twitter.com/@farai_uxguy">Follow me on Twitter</a></p>
+                                    		</div>
+                                            {{ end }}
+                            	        </div>
+                            	</div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+    		</div>
+
+
+  {{ partial "default_foot.html" . }}

@@ -1,0 +1,53 @@
+
+  {{ partial "default_head.html" . }}
+            <div class="section-layout--sloping-bottom-left hero typeset">
+                <div class="hero__layout container">
+                    {{ range first 1 .Data.Pages }}
+                        {{ $author := .Params.author }}
+                        {{ $authorSlug :=  $author | urlize  }}
+                    <a href="/blog/{{ .Slug }}">
+                        <h1 class="hero__header post-hero">
+                            <small>PIXEL UP!Blog </small><br/>
+                            {{ .Title }}
+                        </h1>
+                        <div class="author-content">
+        					<img alt="" src="/img/people/{{ $authorSlug }}.img" srcset="/img/people/{{ $authorSlug }}.jpg" class="avatar avatar--round avatar--small avatar--gray photo" height="234" width="234" originals="234" scale="2">
+                            <p class="caption">by <span itemprop="author">{{ $author }}</span> </p>
+                        </div>
+                    </a>
+                    {{ end}}
+                </div>
+            </div>
+    		<div class="content-wrapper">
+                <div class="section-layout">
+                    <section class="section typeset container">
+						<div class="blog blog-article-list">
+                            {{ range sort .Data.Pages ".Date" "asc" }}
+                                {{ $author := .Params.author }}
+                                {{ $authorSlug :=  $author | urlize  }}
+                            <div class="blog-article-list__item post">
+                                <a href="/blog/articles-about/{{ .Slug }}" class="caption category-caption">
+                                    {{ range .Params.categories }}
+                                    {{ . }}
+                                    {{ end }}
+                                </a>
+    							<a href="/blog/{{ .Slug }}">
+                                    <h3 class="blog-title">{{ .Title }}</h3>
+    								{{ substr .Summary 0 140 }}
+                                    <br /><br />
+                                    <div class="author-content">
+                    					<img alt="" src="/img/people/{{ $authorSlug }}.img" srcset="/img/people/{{ $authorSlug }}.jpg" class="avatar avatar--round avatar--small avatar--gray photo" height="234" width="234" originals="234" scale="2">
+                                        <p class="caption">by <span itemprop="author">{{ $author }}</span> </p>
+                                    </div>
+    							</a>
+    						</div>
+                            {{ end }}
+                        </div>
+                    </section>
+                </div>
+
+
+    		</div>
+
+
+  {{ partial "default_foot.html" . }}
