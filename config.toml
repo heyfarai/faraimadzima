@@ -1,7 +1,7 @@
 baseurl = "http://faraimadzima.com/"
 languageCode = "en-us"
 publishdir = "__build"
-title = "Farai Madzima - UX Guy"
+title = "Farai Madzima — Designer, Speaker & Conference Organiser"
 theme = "F-2016"
 [Params]
   Author = "Farai Madzima"
