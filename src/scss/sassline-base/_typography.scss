@@ -18,7 +18,7 @@
 }
 
 .grey {
-  color: lighten($black, 15%);
+  color: #595959;
 }
 
 // Setting root sizes and base styles.
@@ -45,6 +45,8 @@ a {
   text-decoration: none;
   transition: color .1s, background-color .1s;
   font-weight: bold;
+  outline: 0;
+  transition: all .1s ease-out;
 
   &:hover, &:active, &:focus {
     color: lighten($grey, 35%);

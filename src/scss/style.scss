@@ -19,3 +19,20 @@
     padding-right: 8px;
     padding-left: 3px;
 }
+
+.container {
+    padding: 0 2rem;
+}
+
+@keyframes up {
+    from { transform: translateY(20px); opacity: 0;}
+    to { transform: translateY(0); opacity: 1;}
+}
+.errythang {
+    animation-name: up;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 400ms;
+    animation-timing-function: cubic-bezier(0.2, 0, 0.1, 1);
+}
