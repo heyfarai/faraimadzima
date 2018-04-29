@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Farai Madzima">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
     {{ if eq .URL "/" }}
     <title>{{ .Title }}</title>
     <meta property='og:title' content="{{ .Title }}">
@@ -15,12 +15,11 @@
     {{ end }}
 
     <meta property="og:url" content="{{ .Permalink }}">
-    {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+    <meta name="description" content="👋🏾 I'm Farai Madzima, a Zimbabwean interaction designer, conference organiser, and speaker living in Canada.">
     {{ with .Params.image }}<meta property="og:image" content="images/{{ . }}">{{ end }}
 
     <link rel="preload" href="/js/scripts.js" as="script">
     <link rel="stylesheet" href="/css/style.css">
-
 
     <link rel="icon" type="image/png" href="/android-chrome-256x256.png" sizes="256x256">
     <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
