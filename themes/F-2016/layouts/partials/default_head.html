@@ -15,8 +15,16 @@
     {{ end }}
 
     <meta property="og:url" content="{{ .Permalink }}">
-    <meta name="description" content="👋🏾 I'm Farai Madzima, a Zimbabwean interaction designer, conference organiser, and speaker living in Canada.">
-    <meta property="og:image" content="img/smiley-farai-madzima-3-4.jpg">
+    <meta name="description" content="{{ .Site.Params.Description }}">
+    <meta property="og:image" content="{{ .Site.Params.AvatarImg }}">
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@farai_uxguy" />
+    <meta name="twitter:creator" content="@farai_uxguy" />
+    <meta property="og:description" content="{{ .Site.Params.Description }}" />
+    <meta property="og:image" content="{{ .Site.Params.AvatarImg }}" />
+    
 
     <link rel="preload" href="/js/scripts.js" as="script">
     <link rel="stylesheet" href="/css/style.css">
