@@ -1,24 +1,24 @@
-[debug] [2018-04-29T22:28:40.862Z] ----------------------------------------------------------------------
-[debug] [2018-04-29T22:28:40.867Z] Command:       /Users/farai/.nvm/versions/node/v8.11.1/bin/node /usr/local/bin/firebase deploy
-[debug] [2018-04-29T22:28:40.868Z] CLI Version:   3.9.2
-[debug] [2018-04-29T22:28:40.868Z] Platform:      darwin
-[debug] [2018-04-29T22:28:40.868Z] Node Version:  v8.11.1
-[debug] [2018-04-29T22:28:40.869Z] Time:          Sun Apr 29 2018 18:28:40 GMT-0400 (EDT)
-[debug] [2018-04-29T22:28:40.869Z] ----------------------------------------------------------------------
+[debug] [2018-04-29T22:58:55.226Z] ----------------------------------------------------------------------
+[debug] [2018-04-29T22:58:55.229Z] Command:       /Users/farai/.nvm/versions/node/v8.11.1/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-04-29T22:58:55.229Z] CLI Version:   3.9.2
+[debug] [2018-04-29T22:58:55.229Z] Platform:      darwin
+[debug] [2018-04-29T22:58:55.229Z] Node Version:  v8.11.1
+[debug] [2018-04-29T22:58:55.229Z] Time:          Sun Apr 29 2018 18:58:55 GMT-0400 (EDT)
+[debug] [2018-04-29T22:58:55.229Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-04-29T22:28:40.878Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-04-29T22:28:40.878Z] > authorizing via signed-in user
-[debug] [2018-04-29T22:28:40.880Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fm-com-6030d  
- Sun Apr 29 2018 18:28:40 GMT-0400 (EDT)
-[debug] [2018-04-29T22:28:41.602Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-29T22:28:41.603Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fm-com-6030d/tokens  
- Sun Apr 29 2018 18:28:41 GMT-0400 (EDT)
-[debug] [2018-04-29T22:28:42.255Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-29T22:58:55.239Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-29T22:58:55.240Z] > authorizing via signed-in user
+[debug] [2018-04-29T22:58:55.241Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fm-com-6030d  
+ Sun Apr 29 2018 18:58:55 GMT-0400 (EDT)
+[debug] [2018-04-29T22:58:55.933Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-29T22:58:55.933Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fm-com-6030d/tokens  
+ Sun Apr 29 2018 18:58:55 GMT-0400 (EDT)
+[debug] [2018-04-29T22:58:56.307Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Deploying to 'fm-com-6030d'...
 [info] 
 [info] i  deploying functions, hosting
-[debug] [2018-04-29T22:28:42.860Z] > [functions] package.json contents: {
+[debug] [2018-04-29T22:58:56.678Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -36,17 +36,17 @@
 }
 [info] i  functions: ensuring necessary APIs are enabled...
 [info] i  runtimeconfig: ensuring necessary APIs are enabled...
-[debug] [2018-04-29T22:28:42.862Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/fm-com-6030d?view=CONSUMER_VIEW  
- Sun Apr 29 2018 18:28:42 GMT-0400 (EDT)
-[debug] [2018-04-29T22:28:42.862Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/fm-com-6030d?view=CONSUMER_VIEW  
- Sun Apr 29 2018 18:28:42 GMT-0400 (EDT)
-[debug] [2018-04-29T22:28:43.566Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-29T22:58:56.679Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/fm-com-6030d?view=CONSUMER_VIEW  
+ Sun Apr 29 2018 18:58:56 GMT-0400 (EDT)
+[debug] [2018-04-29T22:58:56.680Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/fm-com-6030d?view=CONSUMER_VIEW  
+ Sun Apr 29 2018 18:58:56 GMT-0400 (EDT)
+[debug] [2018-04-29T22:58:57.458Z] <<< HTTP RESPONSE 200
 [info] ✔  runtimeconfig: all necessary APIs are enabled
-[debug] [2018-04-29T22:28:43.603Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-29T22:58:57.464Z] <<< HTTP RESPONSE 200
 [info] ✔  functions: all necessary APIs are enabled
-[debug] [2018-04-29T22:28:43.605Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/fm-com-6030d  
- Sun Apr 29 2018 18:28:43 GMT-0400 (EDT)
-[debug] [2018-04-29T22:28:43.605Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/fm-com-6030d/apiKeys  
- Sun Apr 29 2018 18:28:43 GMT-0400 (EDT)
-[debug] [2018-04-29T22:28:43.942Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-29T22:28:44.082Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-29T22:58:57.465Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/fm-com-6030d  
+ Sun Apr 29 2018 18:58:57 GMT-0400 (EDT)
+[debug] [2018-04-29T22:58:57.466Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/fm-com-6030d/apiKeys  
+ Sun Apr 29 2018 18:58:57 GMT-0400 (EDT)
+[debug] [2018-04-29T22:58:57.834Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-29T22:58:57.901Z] <<< HTTP RESPONSE 200

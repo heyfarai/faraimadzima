@@ -16,7 +16,7 @@
 
     <meta property="og:url" content="{{ .Permalink }}">
     <meta name="description" content="👋🏾 I'm Farai Madzima, a Zimbabwean interaction designer, conference organiser, and speaker living in Canada.">
-    {{ with .Params.image }}<meta property="og:image" content="images/{{ . }}">{{ end }}
+    <meta property="og:image" content="img/smiley-farai-madzima-3-4.jpg">
 
     <link rel="preload" href="/js/scripts.js" as="script">
     <link rel="stylesheet" href="/css/style.css">
@@ -43,7 +43,19 @@
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Farai Madzima",
+        "url": "http://faraimadzima.com",
+        "sameAs": [
+          "http://instagram.com/farai",
+          "http://www.linkedin.com/in/farai",
+          "http://twitter.com/farai_uxguy"
+        ]
+      }
+    </script>
   </head>
 
   <body>
