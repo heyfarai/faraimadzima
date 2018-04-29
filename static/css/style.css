@@ -72,7 +72,7 @@ caption, th, td {
 
 /* line 20, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .grey {
-  color: #919191;
+  color: #7c7c7c;
 }
 
 /* line 25, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
@@ -149,7 +149,7 @@ body {
 
 /* line 43, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 a {
-  color: #000000;
+  color: #383838;
   text-decoration: none;
   transition: color .1s, background-color .1s;
   font-weight: bold;
@@ -157,13 +157,13 @@ a {
 
 /* line 49, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 a:hover, a:active, a:focus {
-  color: #8595b2;
+  color: #919191;
   text-decoration: none;
 }
 
 /* line 59, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset p a, .typeset li a {
-  background-image: linear-gradient(to bottom, transparent 50%, #333E51 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, #383838 50%);
   background-position: 0 93%;
   background-repeat: repeat-x;
   background-size: 100% 0.15rem;
@@ -172,7 +172,7 @@ a:hover, a:active, a:focus {
 
 /* line 69, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset p a:hover, .typeset p a:active, .typeset p a:focus, .typeset li a:hover, .typeset li a:active, .typeset li a:focus {
-  background-image: linear-gradient(to bottom, transparent 100%, #333E51 50%);
+  background-image: linear-gradient(to bottom, transparent 100%, #383838 50%);
 }
 
 /* line 75, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
@@ -232,7 +232,7 @@ a:hover, a:active, a:focus {
   margin-bottom: 1.88596rem;
   padding-top: 1.11404rem;
   text-align: center;
-  color: #111;
+  color: #565656;
 }
 
 @media screen and (min-width: 40em) {
@@ -870,7 +870,7 @@ a:hover, a:active, a:focus {
 
 /* line 297, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset blockquote p {
-  border-left: 0.15rem solid #000000;
+  border-left: 0.15rem solid #383838;
   font-style: italic;
   padding-left: 1rem;
   margin-bottom: 1.68999rem;
@@ -1383,7 +1383,7 @@ a:hover, a:active, a:focus {
 /* line 4, /Users/farai/Dev/faraimadzima/src/scss/modules/_globals.scss */
 body {
   background-color: #ffffff;
-  color: #111111;
+  color: #383838;
   overflow-x: hidden;
 }
 
@@ -1559,7 +1559,7 @@ img {
   -ms-user-select: none;
   user-select: none;
   border-bottom: 0.1rem solid #d9d9d9;
-  color: #000000;
+  color: #383838;
   cursor: pointer;
   display: block;
   padding: 10px 3%;
@@ -1567,7 +1567,7 @@ img {
 
 /* line 96, /Users/farai/Dev/faraimadzima/src/scss/modules/_nav.scss */
 .main-nav li a:hover, .main-nav li a:active, .main-nav li a:focus, .main-nav li span:hover, .main-nav li span:active, .main-nav li span:focus {
-  background-color: #000000;
+  background-color: #383838;
   color: #FFFFFF;
 }
 
@@ -1592,7 +1592,7 @@ img {
   /* line 118, /Users/farai/Dev/faraimadzima/src/scss/modules/_nav.scss */
   .main-nav li a:hover, .main-nav li a:active, .main-nav li a:focus, .main-nav li span:hover, .main-nav li span:active, .main-nav li span:focus {
     background-color: transparent;
-    color: #000000;
+    color: #383838;
   }
 }
 
