@@ -1,6 +1,6 @@
 
   {{ partial "default_head.html" . }}
-
+<!-- 
       <div class="top-bar">
           <div class="top-bar__layout container">
               <a id="toggle" class="top-bar__toggle" href="#">
@@ -12,39 +12,80 @@
                   </h1>
               </div>
           </div>
-      </div>
-    		<div class="content-wrapper">
-                <div class="section-layout section-layout--no-padding">
-                    <section class="section typeset container">
-                        <h2 class="">Peace!</h2>
-                        <p>I'm an interaction designer, conference organiser, writer and speaker living in Johannesburg, the world's largest man made forest.</p>
-                    </section>
-                    <section class="section typeset container">
-                        <h2>Interaction design</h2>
-                        <ul class="no-bullet">
-                            <li>I leading to lead a great design team at the Standard Bank Group. We work on large,  complex, design challenges to try make money matters simple to understand, and simple to manage for everyone. </li>
-                        </ul>
-                    </section>
-                    <section class="section typeset container">
-                        <h2>Organising Conferences</h2>
-                        <ul class="no-bullet">
-                            <li>I co-organise two conferences in South Africa: <a href="https://pixelup.co.za">PIXEL UP!</a> an international ux and design conference, and <a href="https://sourceup.co.za">SOURCE UP!</a>, an international front-end web development conference.</li>
-                        </ul>
-                    </section>
-                    <!-- <section class="section typeset container">
-                        <h2 class="section__heading--blue">Writing</h2>
-                        <ul class="no-bullet">
-                            <li><a href="">Should your boss learn to design?</a></li>
-                            <li><a href="">We are all learning: Designing SA'S first digital product conference</a></li>
-                        </ul>
-                    </section>
-                    <section class="section typeset container">
-                        <h2 class="section__heading--blue">Speaking</h2>
-                        <p>Peace! I'm an interaction designer, speaker, conference organiser and writer from Johannesburg. I host workshops and work with nice people on websites.</p>
-                    </section> -->
-                </article>
-                </div>
-    		</div>
+      </div> -->
+        <div class="section typeset ">
+            <div class="single-measure">
+                <section class="container">
+                    <h1 class="">Peace!</h1>
+                    <p><strong>I'm Farai Madzima, an interaction designer, conference organiser, and speaker living in Ottawa, Canada.</strong></p>
+                </section>
+                <section class="container">
+                    <h2>Interaction design</h2>
+                    <p>I work as a UX Lead at Shopify in Ottawa. </p>
+                    <p>In my last role, I led the design team at the Standard Bank Group in South Africa. We worked on large,  complex, design challenges to try make money matters simple to understand, and simple to manage for everyone. </p>
+                    </ul>
+                </section>
+                <section class="container ">
+                    <h2>Organising Conferences</h2>
+                    <p>I co-organise two conferences in South Africa: <a href="https://pixelup.co.za">Pixel Up!</a> an international ux and design conference, and <a href="https://sourceup.co.za">Source Up!</a>, an international front-end web development conference.
+                </section>
+                <section class="container ">
+                    <h2 class="section__heading--blue">Speaking and Workshops</h2>
+                    <p>I’ve been fortunate to speak for and with many people about the things that keep me professionally interested. If you’d like me to speak at a public or private event or on a podcast about design process, catch me on <strong>farai (at) pixelup.co.za</strong>.</p>
+                    <h3>Video of a talk I did recently</h3>
+                    <br>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/255015805?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <!-- <div class="video">
+                        <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe src="https://www.youtube.com/embed/IWS9K_rxmOY?rel=0" frameborder="0" allowfullscreen="" allow="autoplay; encrypted-media"></iframe></div>
+                    </div> -->
+                    <br>
+                    <h3>Upcoming talks and workshops</h3>
+                    <ul>
+                        {{ range sort .Site.Data.appearances ".eventDate" "desc" }} 
+                            {{ if gt (time .eventDate).Unix now.Unix }}
+                            {{ partial "_appearance_li.html" . }}
+                            {{ end }}
+                        {{ end }}
+                    </ul>
+                    <h2>Past events I've spoken at</h2>
+                    <h3>2018</h3>
+                    <ul>
+                        {{ range sort .Site.Data.appearances ".eventDate" "desc" }}     
+                            {{ if lt (time .eventDate).Unix now.Unix   }}
+                                {{ if eq (time .eventDate).Year 2018   }}
+                                    {{ partial "_appearance_li.html" . }}
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                    </ul>
+                    <h3>2017</h3>
+                    <ul>
+                        {{ range sort .Site.Data.appearances ".eventDate" "desc" }}     
+                            {{ if eq (time .eventDate).Year 2017   }}
+                                {{ partial "_appearance_li.html" . }}
+                            {{ end }}
+                        {{ end }}
+                    </ul>
+                    <h3>2016</h3>
+                    <ul>
+                        {{ range sort .Site.Data.appearances ".eventDate" "desc" }}     
+                            {{ if eq (time .eventDate).Year 2016   }}
+                                {{ partial "_appearance_li.html" . }}
+                            {{ end }}
+                        {{ end }}
+                    </ul>
+                </section> 
+                <section>
+                    <h2>Stay in touch</h2>
+                    <p>
+                        You can catch me on <a href="https://twitter.com/farai_uxguy">Twitter</a> or farai (at) pixelup.co.za.
+                    </p>
+                    <h1>Peace!</h1>
+                    <br/>
+                </section>
+            </div>
+        </div>
+
 
 
   {{ partial "default_foot.html" . }}

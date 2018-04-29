@@ -2,8 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    {{ .Hugo.Generator }}
-
+    <meta name="author" content="Farai Madzima">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     {{ if eq .URL "/" }}
     <title>{{ .Title }}</title>
@@ -19,8 +18,8 @@
     {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
     {{ with .Params.image }}<meta property="og:image" content="images/{{ . }}">{{ end }}
 
-    <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro:700" rel="stylesheet">
-    <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "uxguy.css" }}">
+    <link rel="preload" href="/js/scripts.js" as="script">
+    <link rel="stylesheet" href="/css/style.css">
 
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -39,9 +38,9 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#828282">
-    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileColor" content="#FF1935">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#151242">
+    <meta name="theme-color" content="#FF1935">
 
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -49,4 +48,4 @@
 
   </head>
 
-  <body>
+  <body id="baseline">

@@ -1,6 +1,6 @@
 baseurl = "http://faraimadzima.com/"
 languageCode = "en-us"
-publishdir = "__build"
+publishdir = "public"
 title = "Farai Madzima — Designer, Speaker & Conference Organiser"
 theme = "F-2016"
 [Params]

@@ -1,0 +1,79 @@
+[
+    {
+        "eventName": "Fluxible",
+        "place": "Waterloo, Canada",
+        "talk": "Cultural bias in design(ers)",
+        "eventDate": "2018-09-22",
+        "role": "Speaker"
+    },
+    {
+        "eventName": "UX Australia",
+        "place": "Vancouver, Canada",
+        "talk": "Cultural bias in design(ers)",
+        "eventDate": "2018-08-31",
+        "role": "Keynote"
+    },
+    {
+        "eventName": "UX Week",
+        "place": "San Francisco, USA",
+        "talk": "Cultural bias in design(ers)",
+        "eventDate": "2018-08-24",
+        "role": "Speaker"
+    },
+    {
+        "eventName": "Design & Content Conference",
+        "place": "Vancouver, Canada",
+        "talk": "Cultural bias in design(ers)",
+        "eventDate": "2018-07-25",
+        "role": "Speaker"
+    },
+    {
+        "eventName": "Interaction 18",
+        "place": "Lyon, France",
+        "talk": "Cultural bias in design(ers)",
+        "eventDate": "2018-02-08",
+        "role": "Speaker"
+    },
+    {
+        "eventName": "Automattic People Series",
+        "place": "Internal",
+        "talk": "Bias in multicultural teams",
+        "eventDate": "2018-04-17",
+        "role": "Speaker"
+    },
+    {
+        "eventName": "IA Summit",
+        "place": "Chicago, USA",
+        "talk": "Cultural bias in design(ers)",
+        "eventDate": "2018-03-25",
+        "role": "Speaker"
+    },
+    {
+        "eventName": "Pixel Up!",
+        "place": "Johannesburg, South Africa",
+        "talk": "Cultural bias in design(ers)",
+        "eventDate": "2018-03-12",
+        "role": "Speaker"
+    },
+    {
+        "eventName": "EOH Thing",
+        "place": "Johannesburg, South Africa",
+        "talk": "Cultural bias in design(ers)",
+        "eventDate": "2017-03-12",
+        "role": "Internal"
+    },
+    {
+        "eventName": "DVT Thing",
+        "place": "Johannesburg, South Africa",
+        "talk": "Cultural bias in design(ers)",
+        "eventDate": "2017-03-12",
+        "role": "Internal"
+    },
+    {
+        "eventName": "Gibbs",
+        "place": "Johannesburg, South Africa",
+        "talk": "Cultural bias in design(ers)",
+        "eventDate": "2016-03-12",
+        "role": "Speaker"
+    }
+]
