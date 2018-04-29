@@ -4,76 +4,87 @@
         "place": "Waterloo, Canada",
         "talk": "Cultural bias in design(ers)",
         "eventDate": "2018-09-22",
-        "role": "Speaker"
+        "role": "Speaker",
+        "url": ""
     },
     {
         "eventName": "UX Australia",
-        "place": "Vancouver, Canada",
-        "talk": "Cultural bias in design(ers)",
+        "place": "Melbourne, Australia",
+        "talk": "Keynote",
         "eventDate": "2018-08-31",
-        "role": "Keynote"
+        "role": "Keynote",
+        "url": "http://www.uxaustralia.com.au/news/fourth-ux-australia-keynote-speaker-announced"
     },
     {
         "eventName": "UX Week",
         "place": "San Francisco, USA",
-        "talk": "Cultural bias in design(ers)",
+        "talk": "Diverse teams: Working together across cultures - Workshop",
         "eventDate": "2018-08-24",
-        "role": "Speaker"
+        "role": "Speaker",
+        "url": "http://uxweek.com/workshops/diverse-teams-working-together-across-cultures"
     },
     {
         "eventName": "Design & Content Conference",
         "place": "Vancouver, Canada",
         "talk": "Cultural bias in design(ers)",
         "eventDate": "2018-07-25",
-        "role": "Speaker"
+        "role": "Speaker",
+        "url": "https://content.design/speaker/farai-madzima"
     },
     {
         "eventName": "Interaction 18",
         "place": "Lyon, France",
         "talk": "Cultural bias in design(ers)",
         "eventDate": "2018-02-08",
-        "role": "Speaker"
+        "role": "Speaker",
+        "url": "https://interaction18.ixda.org/program/talk-can-being-african-make-you-a-bad-designer----cultural-bias-in-design-madzima-farai/"
     },
     {
         "eventName": "Automattic People Series",
-        "place": "Internal",
+        "place": "Remote",
         "talk": "Bias in multicultural teams",
         "eventDate": "2018-04-17",
-        "role": "Speaker"
+        "role": "Speaker",
+        "url": "https://automattic.com/diversity-and-inclusion/"
     },
     {
         "eventName": "IA Summit",
         "place": "Chicago, USA",
         "talk": "Cultural bias in design(ers)",
         "eventDate": "2018-03-25",
-        "role": "Speaker"
+        "role": "Speaker",
+        "url": "http://www.iasummit.org/talk/can-african-make-bad-designer-cultural-bias-design/"
     },
     {
         "eventName": "Pixel Up!",
         "place": "Johannesburg, South Africa",
         "talk": "Cultural bias in design(ers)",
         "eventDate": "2018-03-12",
-        "role": "Speaker"
+        "role": "Speaker",
+        "url": "https://pixelup.co.za/speakers/farai-madzima/#cultural-bias-in-design-ers"
     },
     {
-        "eventName": "EOH Thing",
+        "eventName": "EOH Connect 2017",
         "place": "Johannesburg, South Africa",
-        "talk": "Cultural bias in design(ers)",
-        "eventDate": "2017-03-12",
-        "role": "Internal"
+        "talk": "Design value and digital business",
+        "eventDate": "2017-03-05",
+        "role": "Internal",
+        "url": ""
     },
     {
-        "eventName": "DVT Thing",
+        "eventName": "DVT Insights",
         "place": "Johannesburg, South Africa",
-        "talk": "Cultural bias in design(ers)",
-        "eventDate": "2017-03-12",
-        "role": "Internal"
+        "talk": "Design in Enterprise is Difficult in South Africa",
+        "eventDate": "2017-10-25",
+        "role": "Internal",
+        "url": "https://speakerdeck.com/farai/design-in-enterprise-is-difficult-in-south-africa"
     },
     {
-        "eventName": "Gibbs",
+        "eventName": "Gordon Institute of Business Science",
         "place": "Johannesburg, South Africa",
-        "talk": "Cultural bias in design(ers)",
-        "eventDate": "2016-03-12",
-        "role": "Speaker"
+        "talk": "Design thinking in business",
+        "eventDate": "2016-07-15",
+        "role": "Speaker",
+        "url": "https://www.youtube.com/watch?v=IWS9K_rxmOY"
     }
 ]

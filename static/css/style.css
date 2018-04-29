@@ -70,7 +70,12 @@ caption, th, td {
   font-display: swap;
 }
 
-/* line 22, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 20, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+.grey {
+  color: #919191;
+}
+
+/* line 25, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -78,71 +83,71 @@ html {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 22, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 25, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   html {
     font-size: 100%;
   }
 }
 
 @media screen and (min-width: 50em) {
-  /* line 22, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 25, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   html {
     font-size: 100%;
   }
 }
 
 @media screen and (min-width: 64em) {
-  /* line 22, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 25, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   html {
     font-size: 100%;
   }
 }
 
 @media screen and (min-width: 100em) {
-  /* line 22, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 25, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   html {
     font-size: 100%;
   }
 }
 
-/* line 30, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 33, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 body {
   font-size: 1.11875rem;
-  font-family: Nanum Gothic, serif;
+  font-family: Gentium Book Basic, serif;
   font-style: normal;
   font-weight: 400;
   line-height: 2rem;
 }
 
 @media screen and (min-width: 40em) {
-  /* line 30, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 33, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   body {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (min-width: 50em) {
-  /* line 30, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 33, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   body {
     font-size: 1.28125rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  /* line 30, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 33, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   body {
     font-size: 1.40625rem;
   }
 }
 
 @media screen and (min-width: 100em) {
-  /* line 30, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 33, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   body {
     font-size: 1.5625rem;
   }
 }
 
-/* line 40, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 43, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 a {
   color: #000000;
   text-decoration: none;
@@ -150,27 +155,27 @@ a {
   font-weight: bold;
 }
 
-/* line 46, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 49, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 a:hover, a:active, a:focus {
-  color: #0B348B;
+  color: #8595b2;
   text-decoration: none;
 }
 
-/* line 56, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 59, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset p a, .typeset li a {
-  background-image: linear-gradient(to bottom, transparent 50%, #ff7f8f 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, #333E51 50%);
   background-position: 0 93%;
   background-repeat: repeat-x;
   background-size: 100% 0.15rem;
   text-shadow: 0.1rem 0 #ffffff, 0.15rem 0 #ffffff, -0.1rem 0 #ffffff, -0.15rem 0 #ffffff;
 }
 
-/* line 66, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 69, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset p a:hover, .typeset p a:active, .typeset p a:focus, .typeset li a:hover, .typeset li a:active, .typeset li a:focus {
-  background-image: linear-gradient(to bottom, transparent 50%, #ff7f8f 50%);
+  background-image: linear-gradient(to bottom, transparent 100%, #333E51 50%);
 }
 
-/* line 72, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 75, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset p {
   line-height: 2rem;
   margin-bottom: 2.38596rem;
@@ -179,7 +184,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 72, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 75, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset p {
     margin-bottom: 2.41399rem;
     padding-top: 0.58601rem;
@@ -187,7 +192,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 50em) {
-  /* line 72, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 75, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset p {
     margin-bottom: 2.44202rem;
     padding-top: 0.55798rem;
@@ -195,7 +200,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 64em) {
-  /* line 72, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 75, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset p {
     margin-bottom: 2.48515rem;
     padding-top: 0.51485rem;
@@ -203,24 +208,24 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 100em) {
-  /* line 72, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 75, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset p {
     margin-bottom: 2.53905rem;
     padding-top: 0.46095rem;
   }
 }
 
-/* line 79, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 82, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
   color: #FF1935;
-  font-family: Nanum Gothic, sans-serif;
+  font-family: Gentium Book Basic, sans-serif;
   font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
   font-style: normal;
   font-weight: 800;
   text-transform: uppercase;
 }
 
-/* line 89, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 92, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset h1, .typeset .alpha {
   line-height: 3rem;
   font-size: 1.11875rem;
@@ -231,7 +236,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 89, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 92, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h1, .typeset .alpha {
     font-size: 1.2rem;
     margin-bottom: 1.91399rem;
@@ -240,7 +245,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 50em) {
-  /* line 89, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 92, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h1, .typeset .alpha {
     font-size: 1.28125rem;
     margin-bottom: 1.94202rem;
@@ -249,7 +254,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 64em) {
-  /* line 89, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 92, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h1, .typeset .alpha {
     font-size: 1.40625rem;
     margin-bottom: 1.98515rem;
@@ -258,7 +263,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 100em) {
-  /* line 89, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 92, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h1, .typeset .alpha {
     font-size: 1.5625rem;
     margin-bottom: 2.03905rem;
@@ -266,7 +271,7 @@ a:hover, a:active, a:focus {
   }
 }
 
-/* line 96, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 99, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset h2, .typeset .beta {
   line-height: 2rem;
   font-size: 1.11875rem;
@@ -275,7 +280,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 96, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 99, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h2, .typeset .beta {
     font-size: 1.2rem;
     margin-bottom: 1.41399rem;
@@ -284,7 +289,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 50em) {
-  /* line 96, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 99, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h2, .typeset .beta {
     font-size: 1.28125rem;
     margin-bottom: 1.44202rem;
@@ -293,7 +298,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 64em) {
-  /* line 96, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 99, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h2, .typeset .beta {
     font-size: 1.40625rem;
     margin-bottom: 1.48515rem;
@@ -302,7 +307,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 100em) {
-  /* line 96, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 99, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h2, .typeset .beta {
     font-size: 1.5625rem;
     margin-bottom: 1.53905rem;
@@ -310,7 +315,7 @@ a:hover, a:active, a:focus {
   }
 }
 
-/* line 101, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 104, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset h3, .typeset .gamma {
   line-height: 2rem;
   font-size: 1.11875rem;
@@ -319,7 +324,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 101, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 104, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h3, .typeset .gamma {
     font-size: 1.2rem;
     margin-bottom: 0.41399rem;
@@ -328,7 +333,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 50em) {
-  /* line 101, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 104, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h3, .typeset .gamma {
     font-size: 1.28125rem;
     margin-bottom: 0.44202rem;
@@ -337,7 +342,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 64em) {
-  /* line 101, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 104, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h3, .typeset .gamma {
     font-size: 1.40625rem;
     margin-bottom: 0.48515rem;
@@ -346,7 +351,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 100em) {
-  /* line 101, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 104, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h3, .typeset .gamma {
     font-size: 1.5625rem;
     margin-bottom: 0.53905rem;
@@ -354,7 +359,7 @@ a:hover, a:active, a:focus {
   }
 }
 
-/* line 106, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 109, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset h4, .typeset .delta {
   line-height: 2rem;
   font-size: 1.11875rem;
@@ -363,7 +368,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 106, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 109, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h4, .typeset .delta {
     font-size: 1.2rem;
     margin-bottom: 0.41399rem;
@@ -372,7 +377,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 50em) {
-  /* line 106, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 109, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h4, .typeset .delta {
     font-size: 1.28125rem;
     margin-bottom: 0.44202rem;
@@ -381,7 +386,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 64em) {
-  /* line 106, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 109, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h4, .typeset .delta {
     font-size: 1.40625rem;
     margin-bottom: 0.48515rem;
@@ -390,7 +395,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 100em) {
-  /* line 106, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 109, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h4, .typeset .delta {
     font-size: 1.5625rem;
     margin-bottom: 0.53905rem;
@@ -398,7 +403,7 @@ a:hover, a:active, a:focus {
   }
 }
 
-/* line 111, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 114, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset h5, .typeset .epsilon {
   line-height: 2rem;
   font-size: 1rem;
@@ -407,7 +412,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 111, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 114, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h5, .typeset .epsilon {
     font-size: 1.0625rem;
     margin-bottom: -0.63345rem;
@@ -416,7 +421,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 50em) {
-  /* line 111, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 114, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h5, .typeset .epsilon {
     font-size: 1.125rem;
     margin-bottom: -0.61188rem;
@@ -425,7 +430,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 64em) {
-  /* line 111, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 114, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h5, .typeset .epsilon {
     font-size: 1.25rem;
     margin-bottom: -0.56876rem;
@@ -434,7 +439,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 100em) {
-  /* line 111, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 114, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h5, .typeset .epsilon {
     font-size: 1.375rem;
     margin-bottom: -0.52563rem;
@@ -442,7 +447,7 @@ a:hover, a:active, a:focus {
   }
 }
 
-/* line 116, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 119, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset h6, .typeset .zeta {
   line-height: 2rem;
   font-size: 1rem;
@@ -451,7 +456,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 116, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 119, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h6, .typeset .zeta {
     font-size: 1.0625rem;
     margin-bottom: -0.63345rem;
@@ -460,7 +465,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 50em) {
-  /* line 116, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 119, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h6, .typeset .zeta {
     font-size: 1.125rem;
     margin-bottom: -0.61188rem;
@@ -469,7 +474,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 64em) {
-  /* line 116, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 119, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h6, .typeset .zeta {
     font-size: 1.25rem;
     margin-bottom: -0.56876rem;
@@ -478,7 +483,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 100em) {
-  /* line 116, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 119, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset h6, .typeset .zeta {
     font-size: 1.375rem;
     margin-bottom: -0.52563rem;
@@ -486,7 +491,7 @@ a:hover, a:active, a:focus {
   }
 }
 
-/* line 121, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 124, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ul, .typeset ol {
   line-height: 2rem;
   margin-bottom: 1.34499rem;
@@ -494,7 +499,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 121, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 124, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset ul, .typeset ol {
     margin-bottom: 1.36655rem;
     padding-top: 0.63345rem;
@@ -502,7 +507,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 50em) {
-  /* line 121, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 124, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset ul, .typeset ol {
     margin-bottom: 1.38811rem;
     padding-top: 0.61188rem;
@@ -510,7 +515,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 64em) {
-  /* line 121, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 124, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset ul, .typeset ol {
     margin-bottom: 1.43124rem;
     padding-top: 0.56876rem;
@@ -518,14 +523,14 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 100em) {
-  /* line 121, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 124, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset ul, .typeset ol {
     margin-bottom: 1.47437rem;
     padding-top: 0.52563rem;
   }
 }
 
-/* line 124, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 127, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ul li, .typeset ol li {
   font-feature-settings: 'kern', 'onum', 'liga';
   margin-left: 2rem;
@@ -533,30 +538,30 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 124, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 127, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset ul li, .typeset ol li {
     margin-left: 0;
   }
 }
 
-/* line 133, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 136, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ul li ol, .typeset ul li ul, .typeset ol li ol, .typeset ol li ul {
   padding-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 2rem;
 }
 
-/* line 142, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 145, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ol {
   list-style-type: none;
 }
 
-/* line 145, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 148, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ol li {
   counter-increment: top-level;
 }
 
-/* line 148, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 151, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ol li:before {
   content: counter(top-level) ".";
   font-feature-settings: 'lnum', 'tnum';
@@ -566,47 +571,47 @@ a:hover, a:active, a:focus {
   width: 2em;
 }
 
-/* line 161, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 164, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ol li ul li:before {
   content: '';
 }
 
-/* line 167, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 170, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ol li ul li ol li {
   counter-increment: alt-level;
 }
 
-/* line 170, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 173, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ol li ul li ol li:before {
   content: counter(alt-level) ".";
 }
 
-/* line 180, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 183, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ol li ol li {
   counter-increment: sub-level;
 }
 
-/* line 183, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 186, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ol li ol li:before {
   content: counter(top-level) "." counter(sub-level);
 }
 
-/* line 191, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 194, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ol li ol li ul li:before {
   content: '';
 }
 
-/* line 199, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 202, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ol li ol li ol li {
   counter-increment: sub-sub-level;
 }
 
-/* line 202, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 205, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset ol li ol li ol li:before {
   content: counter(top-level) "." counter(sub-level) "." counter(sub-sub-level);
 }
 
-/* line 213, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 216, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset dl {
   line-height: 2rem;
   margin-bottom: 1.34499rem;
@@ -614,7 +619,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 213, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 216, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset dl {
     margin-bottom: 1.36655rem;
     padding-top: 0.63345rem;
@@ -622,7 +627,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 50em) {
-  /* line 213, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 216, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset dl {
     margin-bottom: 1.38811rem;
     padding-top: 0.61188rem;
@@ -630,7 +635,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 64em) {
-  /* line 213, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 216, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset dl {
     margin-bottom: 1.43124rem;
     padding-top: 0.56876rem;
@@ -638,43 +643,43 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 100em) {
-  /* line 213, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 216, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset dl {
     margin-bottom: 1.47437rem;
     padding-top: 0.52563rem;
   }
 }
 
-/* line 216, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 219, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset dl dt, .typeset dl dd {
   font-feature-settings: 'kern', 'onum', 'liga';
   margin-left: 2rem;
 }
 
 @media screen and (min-width: 40em) {
-  /* line 216, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 219, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset dl dt, .typeset dl dd {
     margin-left: 0;
   }
 }
 
-/* line 225, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 228, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset dl dt {
   font-weight: 700;
 }
 
-/* line 229, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 232, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset dl dd + dt {
   padding-top: 1rem;
 }
 
-/* line 235, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 238, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset table {
   line-height: 2rem;
   font-size: 0.89375rem;
   margin-bottom: -0.69167rem;
   padding-top: 0.69167rem;
-  font-family: Nanum Gothic, sans-serif;
+  font-family: Gentium Book Basic, sans-serif;
   font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
   font-style: normal;
   font-weight: 400;
@@ -682,7 +687,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 235, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 238, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset table {
     font-size: 0.95625rem;
     margin-bottom: -0.6701rem;
@@ -691,7 +696,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 50em) {
-  /* line 235, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 238, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset table {
     font-size: 1.01875rem;
     margin-bottom: -0.64854rem;
@@ -700,7 +705,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 64em) {
-  /* line 235, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 238, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset table {
     font-size: 1.05625rem;
     margin-bottom: -0.6356rem;
@@ -709,7 +714,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 100em) {
-  /* line 235, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 238, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset table {
     font-size: 1.1rem;
     margin-bottom: -0.62051rem;
@@ -717,7 +722,7 @@ a:hover, a:active, a:focus {
   }
 }
 
-/* line 246, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 249, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset table thead th {
   line-height: 2rem;
   font-size: 1rem;
@@ -727,7 +732,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 246, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 249, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset table thead th {
     font-size: 1.0625rem;
     margin-bottom: -0.63345rem;
@@ -736,7 +741,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 50em) {
-  /* line 246, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 249, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset table thead th {
     font-size: 1.125rem;
     margin-bottom: -0.61188rem;
@@ -745,7 +750,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 64em) {
-  /* line 246, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 249, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset table thead th {
     font-size: 1.25rem;
     margin-bottom: -0.56876rem;
@@ -754,7 +759,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 100em) {
-  /* line 246, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 249, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset table thead th {
     font-size: 1.375rem;
     margin-bottom: -0.52563rem;
@@ -762,58 +767,58 @@ a:hover, a:active, a:focus {
   }
 }
 
-/* line 254, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 257, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset b, .typeset strong, .typeset .bold {
   font-weight: 700;
 }
 
-/* line 259, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 262, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset em, .typeset i, .typeset .italic {
   font-style: italic;
 }
 
-/* line 264, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 267, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset small, .typeset .caption {
   font-size: 0.8rem;
-  font-family: Nanum Gothic, sans-serif;
+  font-family: Gentium Book Basic, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 @media screen and (min-width: 40em) {
-  /* line 264, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 267, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset small, .typeset .caption {
     font-size: 0.85rem;
   }
 }
 
 @media screen and (min-width: 50em) {
-  /* line 264, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 267, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset small, .typeset .caption {
     font-size: 0.9rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  /* line 264, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 267, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset small, .typeset .caption {
     font-size: 0.9375rem;
   }
 }
 
 @media screen and (min-width: 100em) {
-  /* line 264, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 267, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset small, .typeset .caption {
     font-size: 0.975rem;
   }
 }
 
-/* line 272, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 275, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset small {
   line-height: 1rem;
 }
 
-/* line 276, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 279, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset .caption {
   line-height: 2rem;
   margin-bottom: 1.27599rem;
@@ -822,7 +827,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 276, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 279, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset .caption {
     margin-bottom: 1.29324rem;
     padding-top: 0.70676rem;
@@ -830,7 +835,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 50em) {
-  /* line 276, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 279, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset .caption {
     margin-bottom: 1.31049rem;
     padding-top: 0.68951rem;
@@ -838,7 +843,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 64em) {
-  /* line 276, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 279, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset .caption {
     margin-bottom: 1.32343rem;
     padding-top: 0.67657rem;
@@ -846,24 +851,24 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 100em) {
-  /* line 276, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 279, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset .caption {
     margin-bottom: 1.33636rem;
     padding-top: 0.66364rem;
   }
 }
 
-/* line 283, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 286, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset h1 + .caption, .typeset .alpha + .caption, .typeset h2 + .caption, .typeset .beta + .caption, .typeset h3 + .caption, .typeset .gamma + .caption {
   margin-top: -1rem;
 }
 
-/* line 287, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 290, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset .delta + .caption, .typeset .epsilon + .caption, .typeset .zeta + .caption {
   margin-top: 0rem;
 }
 
-/* line 294, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 297, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset blockquote p {
   border-left: 0.15rem solid #000000;
   font-style: italic;
@@ -873,7 +878,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 294, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 297, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset blockquote p {
     margin-bottom: 1.73311rem;
     padding-bottom: 0.63345rem;
@@ -881,7 +886,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 50em) {
-  /* line 294, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 297, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset blockquote p {
     margin-bottom: 1.77624rem;
     padding-bottom: 0.61188rem;
@@ -889,7 +894,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 64em) {
-  /* line 294, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 297, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset blockquote p {
     margin-bottom: 1.86249rem;
     padding-bottom: 0.56876rem;
@@ -897,7 +902,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 100em) {
-  /* line 294, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 297, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset blockquote p {
     margin-bottom: 1.94874rem;
     padding-bottom: 0.52563rem;
@@ -905,13 +910,13 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 292, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 295, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset blockquote {
     margin-left: -1rem;
   }
 }
 
-/* line 329, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 332, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset hr {
   background-image: linear-gradient(to bottom, transparent 50%, #BDC8CC 50%);
   background-position: 0 50%;
@@ -923,13 +928,13 @@ a:hover, a:active, a:focus {
   padding-top: 3rem;
 }
 
-/* line 341, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 344, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset code, .typeset pre {
   background-color: #F5F4F2;
-  font-family: Nanum Gothic, monospace;
+  font-family: Gentium Book Basic, monospace;
 }
 
-/* line 346, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 349, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset pre {
   display: block;
   margin-bottom: 2rem;
@@ -940,60 +945,60 @@ a:hover, a:active, a:focus {
   word-wrap: break-word;
 }
 
-/* line 356, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 359, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset code {
   font-size: 0.8rem;
   line-height: 1rem;
 }
 
 @media screen and (min-width: 40em) {
-  /* line 356, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 359, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset code {
     font-size: 0.85rem;
   }
 }
 
 @media screen and (min-width: 50em) {
-  /* line 356, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 359, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset code {
     font-size: 0.9rem;
   }
 }
 
 @media screen and (min-width: 64em) {
-  /* line 356, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 359, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset code {
     font-size: 0.9375rem;
   }
 }
 
 @media screen and (min-width: 100em) {
-  /* line 356, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+  /* line 359, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
   .typeset code {
     font-size: 0.975rem;
   }
 }
 
-/* line 363, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 366, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset .upper {
   font-kerning: normal;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
 
-/* line 370, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 373, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset .small-caps {
   font-feature-settings: 'smcp', 'kern';
   font-kerning: normal;
   letter-spacing: 0.1rem;
 }
 
-/* line 377, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 380, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset .lining-numerals {
   font-feature-settings: 'lnum', 'kern';
 }
 
-/* line 382, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
+/* line 385, /Users/farai/Dev/faraimadzima/src/scss/sassline-base/_typography.scss */
 .typeset .oldstyle-numerals {
   font-feature-settings: 'onum', 'kern';
 }
@@ -1542,7 +1547,7 @@ img {
 /* line 77, /Users/farai/Dev/faraimadzima/src/scss/modules/_nav.scss */
 .main-nav li {
   font-size: 1rem;
-  font-family: Nanum Gothic, sans-serif;
+  font-family: Gentium Book Basic, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -1693,7 +1698,7 @@ img {
 .global-footer p {
   font-size: 0.89375rem;
   color: #BDC8CC;
-  font-family: Nanum Gothic, sans-serif;
+  font-family: Gentium Book Basic, sans-serif;
   font-style: normal;
   font-weight: 400;
   padding: 1rem 0;
@@ -1734,6 +1739,31 @@ img {
   background-image: linear-gradient(to bottom, cyan 0, rgba(255, 255, 255, 0) 1px);
   background-repeat: repeat-y;
   background-size: 100% 1rem;
+}
+
+/* line 1, /Users/farai/Dev/faraimadzima/src/scss/modules/_avatar.scss */
+.avatar-wrapper {
+  width: 8rem;
+  height: 8rem;
+  margin: 3rem auto 1.5rem;
+  display: block;
+}
+
+/* line 6, /Users/farai/Dev/faraimadzima/src/scss/modules/_avatar.scss */
+.avatar-wrapper .avatar {
+  border-radius: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 15, /Users/farai/Dev/faraimadzima/src/scss/style.scss */
+.firstcharacter {
+  font-size: 1.7rem;
+  line-height: 1.5rem;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
 }
 
 /*# sourceMappingURL=../../static/css/style.map */

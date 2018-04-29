@@ -3,7 +3,7 @@
 // Import Jake's polyfill for async waitUntil
 importScripts('/js/async-waituntil.js');
 
-const version = 'v0.05::';
+const version = 'v0.07::';
 const staticCacheName = version + 'static';
 
 function updateStaticCache() {
@@ -11,9 +11,10 @@ function updateStaticCache() {
     .then( cache => {
         // These items won't block the installation of the Service Worker
         cache.addAll([
-            '/fonts/NanumGothic-Bold.ttf',
-            '/fonts/NanumGothic-ExtraBold.ttf',
-            '/fonts/NanumGothic-Regular.ttf',
+            // '/fonts/NanumGothic-Bold.ttf',
+            // '/fonts/NanumGothic-ExtraBold.ttf',
+            // '/fonts/NanumGothic-Regular.ttf',
+            '/img/smiley-farai-madzima-3-4.jpg',
             '/favicon.ico',
             '/manifest.json'
         ]);
@@ -22,7 +23,7 @@ function updateStaticCache() {
             '/',
             '/css/style.css',
             '/js/scripts.js',
-            '/fonts/NanumGothic-Regular.ttf',
+            // '/fonts/NanumGothic-Regular.ttf',
         ]);
     });
 }

@@ -56,7 +56,7 @@ $gutterwidths: (
 // Add weight and style details too.
 // ! Set cap height to set to the baseline.
 $bodytype: (
-  font-family: 'Nanum Gothic, serif',
+  font-family: 'Gentium Book Basic, serif',
   regular: 400,
   bold: 700,
   italic: italic,
@@ -64,14 +64,14 @@ $bodytype: (
 ) !default;
 
 $headingtype: (
-  font-family: 'Nanum Gothic, sans-serif',
+  font-family: 'Gentium Book Basic, sans-serif',
   regular: 400,
   bold: 800,
   cap-height: 0.69
 ) !default;
 
 $monospacetype: (
-  font-family: 'Nanum Gothic, monospace',
+  font-family: 'Gentium Book Basic, monospace',
   regular: 400,
   cap-height: 0.69
 ) !default;
@@ -87,11 +87,12 @@ $monospacetype: (
 $headingColour: #FF1935 !default;
 $bodyColour: #111111 !default;
 $linkColour: #000000 !default;
-$hoverColour: #0B348B !default;
+$hoverColour: #333333 !default;
 $captionColour: #BDC8CC !default;
 $white: #FFFFFF !default;
 $black: #111 !default;
 $primaryColour: #FF1935 !default;
+$grey: #333E51 !default;
 
 // Background colours.
 $backgroundColour: #ffffff !default;
