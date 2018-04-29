@@ -16,14 +16,12 @@
 
     <meta property="og:url" content="{{ .Permalink }}">
     <meta name="description" content="{{ .Site.Params.Description }}">
-    <meta property="og:image" content="{{ .Site.Params.AvatarImg }}">
-
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.AvatarImg }}" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@farai_uxguy" />
     <meta name="twitter:creator" content="@farai_uxguy" />
     <meta property="og:description" content="{{ .Site.Params.Description }}" />
-    <meta property="og:image" content="{{ .Site.Params.AvatarImg }}" />
     
 
     <link rel="preload" href="/js/scripts.js" as="script">
