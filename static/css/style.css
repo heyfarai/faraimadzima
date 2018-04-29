@@ -1747,9 +1747,11 @@ img {
   height: 8rem;
   margin: 3rem auto 1.5rem;
   display: block;
+  text-align: center;
+  border-radius: 100%;
 }
 
-/* line 6, /Users/farai/Dev/faraimadzima/src/scss/modules/_avatar.scss */
+/* line 8, /Users/farai/Dev/faraimadzima/src/scss/modules/_avatar.scss */
 .avatar-wrapper .avatar {
   border-radius: 100%;
   object-fit: cover;
