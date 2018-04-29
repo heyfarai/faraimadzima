@@ -3,7 +3,7 @@
 // Import Jake's polyfill for async waitUntil
 importScripts('/js/async-waituntil.js');
 
-const version = 'v0.08::';
+const version = 'v0.09::';
 const staticCacheName = version + 'static';
 
 function updateStaticCache() {
@@ -16,7 +16,7 @@ function updateStaticCache() {
             // '/fonts/NanumGothic-Regular.ttf',
             '/img/smiley-farai-madzima-3-4.jpg',
             '/favicon.ico',
-            '/manifest.json'
+            '/site.manifest'
         ]);
         // These items must be cached for the Service Worker to complete installation
         return cache.addAll([
