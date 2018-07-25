@@ -10,6 +10,15 @@
                     <p><strong><span class="firstcharacter">👋🏾</span> I'm Farai Madzima, a Zimbabwean UX designer, conference organiser, and speaker living in Canada.</strong></p>
                 </section>
                 <section class="container">
+                    <h2>I Recently wrote</h2>
+                    {{ range where .Data.Pages "Type" "blog" }}     
+                    <p>
+                        <a href="{{ .Permalink }}">{{ .Title }}</a> <br>
+                        <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span>
+                    </p>
+                    {{ end }}
+                </section>
+                <section class="container">
                     <h2>Interaction design</h2>
                     <p>I hang with the logistics experience design leadership team at <a href="https://shopify.com">Shopify</a>, where we’re building next-generation ecommerce tools that make commerce easier for everyone. In a past life, in South Africa, I led the experience design team at <a href="https://standardbank.co.za">Standard Bank Group</a>, Africa's largest bank.
                         </p>
@@ -30,6 +39,8 @@
                             {{ end }}
                         {{ end }}
                     </ul>
+                </section>
+                <section class="container">
                     <h3>Video of a talk I did recently</h3>
                     <br>
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe title="talk-video" src="https://player.vimeo.com/video/255015805?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
@@ -37,6 +48,8 @@
                         <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe title="talk-video" src="https://www.youtube.com/embed/IWS9K_rxmOY?rel=0" frameborder="0" allowfullscreen="" allow="autoplay; encrypted-media"></iframe></div>
                     </div> -->
                     <br>
+                </section>
+                <section class="container">
                     <h2>Past events I've spoken at</h2>
                     <h3>2018</h3>
                     <ul>
