@@ -100,6 +100,7 @@ a {
   // Heading level 2.
   h2, .beta {
     @include sassline(epsilon, $headingtype, 2, 2, all);
+    margin-bottom: 0 !important;
   }
 
   // Heading level 3.

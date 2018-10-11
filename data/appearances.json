@@ -1,5 +1,13 @@
 [
     {
+        "eventName": "UXLx",
+        "place": "Lisbon, Portugal",
+        "talk": "Workshop",
+        "eventDate": "2019-05-21",
+        "role": "Speaker",
+        "url": "https://www.ux-lx.com/speakers/farai_madzima.html"
+    },
+    {
         "eventName": "Fluxible",
         "place": "Waterloo, Canada",
         "talk": "Cultural bias in design(ers)",
@@ -86,5 +94,14 @@
         "eventDate": "2016-07-15",
         "role": "Speaker",
         "url": "https://www.youtube.com/watch?v=IWS9K_rxmOY"
+    },
+    {
+        "eventName": "World Interaction Design Day 2019",
+        "place": "Toronto, Canada",
+        "talk": "Our team is diverse. Now what?",
+        "eventDate": "2018-09-25",
+        "role": "Speaker",
+        "url": "https://www.eventbrite.ca/e/world-interaction-design-day-the-power-of-diversity-in-design-tickets-49042398133"
     }
 ]
+

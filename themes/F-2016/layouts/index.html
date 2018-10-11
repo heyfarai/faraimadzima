@@ -7,15 +7,17 @@
                         <img data-src="/img/smiley-farai-madzima-3-4.jpg" alt="Farai with a bushy beard, smiling" class="lazy avatar" src="/img/smiley-farai-madzima-3-4--tn.jpg">
                     </div>
                     <h1 class="">Peace!</h1>
-                    <p><strong><span class="firstcharacter">👋🏾</span> I'm Farai Madzima, a Zimbabwean UX designer, conference organiser, and speaker living in Canada.</strong></p>
+                    <p><strong><span class="firstcharacter">👋🏾</span> I'm Farai Madzima, a Zimbabwean UX designer, conference organiser, and <a href="#">speaker</a> living in Canada.</strong></p>
                 </section>
                 <section class="container">
-                    <h2>I Recently wrote</h2>
-                    {{ range where .Data.Pages "Type" "blog" }}     
-                    <p>
-                        <a href="{{ .Permalink }}">{{ .Title }}</a> <br>
-                        <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span>
-                    </p>
+                    {{ if gt (len (where .Data.Pages "Type" "blog")) 0 }}
+                        <h2>I Recently wrote</h2>
+                        {{ range where .Data.Pages "Type" "blog" }}     
+                        <p>
+                            <a href="{{ .Permalink }}">{{ .Title }}</a> <br>
+                            <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span>
+                        </p>
+                        {{ end }}
                     {{ end }}
                 </section>
                 <section class="container">
