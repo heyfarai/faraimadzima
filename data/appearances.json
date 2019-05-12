@@ -1,8 +1,32 @@
 [
     {
+        "eventName": "Leading Design - London",
+        "place": "London, UK",
+        "talk": "The only one of your kind in the room: Perils and opportunities.",
+        "eventDate": "2019-11-06",
+        "role": "Speaker",
+        "url": "https://2019.leadingdesignconf.com/london"
+    },
+    {
+        "eventName": "An Event Apart",
+        "place": "Denver, USA",
+        "talk": "Working Together in Diverse Teams ",
+        "eventDate": "2019-10-28",
+        "role": "Speaker",
+        "url": "https://aneventapart.com/event/denver-2019#s17397"
+    },
+    {
+        "eventName": "Leading Design - New York",
+        "place": "New York, USA",
+        "talk": "The only one of your kind in the room: Perils and opportunities.",
+        "eventDate": "2019-06-19",
+        "role": "Speaker",
+        "url": "https://2019.leadingdesignconf.com/newyork/speakers/farai-madzima"
+    },
+    {
         "eventName": "UXLx",
         "place": "Lisbon, Portugal",
-        "talk": "Workshop",
+        "talk": "Talk + Workshop",
         "eventDate": "2019-05-21",
         "role": "Speaker",
         "url": "https://www.ux-lx.com/speakers/farai_madzima.html"
@@ -13,7 +37,7 @@
         "talk": "Cultural bias in design(ers)",
         "eventDate": "2018-09-22",
         "role": "Speaker",
-        "url": ""
+        "url": "https://www.fluxible.ca/speakers/farai-madzima/"
     },
     {
         "eventName": "UX Australia",

@@ -5,7 +5,7 @@
     {{ .Hugo.Generator }}
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    {{ if eq .URL "/" }}
+    {{ if eq .Params.url "/" }}
     <title>{{ .Title }}</title>
     <meta property='og:title' content="{{ .Title }}">
     <meta property="og:type" content="website">

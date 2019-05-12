@@ -8800,7 +8800,7 @@ jQuery.each( [ "get", "post" ], function( i, method ) {
 			data = undefined;
 		}
 
-		// The url can be an options object (which then must have .url)
+		// The url can be an options object (which then must have .Params.url)
 		return jQuery.ajax( jQuery.extend( {
 			url: url,
 			type: method,
