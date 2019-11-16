@@ -55,6 +55,16 @@
                     </section>
                     <section class="container">
                         <h2>Past events I've spoken at</h2>
+                        <h3>2019</h3>
+                        <ul>
+                            {{ range sort .Site.Data.appearances ".eventDate" "desc" }}     
+                                {{ if lt (time .eventDate).Unix now.Unix   }}
+                                    {{ if eq (time .eventDate).Year 2019   }}
+                                        {{ partial "_appearance_li.html" . }}
+                                    {{ end }}
+                                {{ end }}
+                            {{ end }}
+                        </ul>
                         <h3>2018</h3>
                         <ul>
                             {{ range sort .Site.Data.appearances ".eventDate" "desc" }}     
