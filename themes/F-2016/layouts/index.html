@@ -35,14 +35,14 @@
                     <section id="speaking" class="container">
                         <h2>Speaking and Workshops</h2>
                         <p>I’ve been so lucky to speak around the world. These days I'm focussed on talking about <strong>working effectively in multicultural teams</strong>. If you’d like me to speak at a public or private event, catch me on <strong>farai (at) pixelup.co.za</strong>.</p>
-                        <h3>Upcoming talks and workshops</h3>
+                        {# <h3>Upcoming talks and workshops</h3>
                         <ul>
                             {{ range sort .Site.Data.appearances ".eventDate" "desc" }} 
                                 {{ if gt (time .eventDate).Unix now.Unix }}
                                 {{ partial "_appearance_li.html" . }}
                                 {{ end }}
                             {{ end }}
-                        </ul>
+                        </ul> #}
                     </section>
                     <section class="container">
                         <h3>Video of a talk I did recently</h3>
