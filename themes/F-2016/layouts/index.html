@@ -24,6 +24,16 @@
         </p>
     </ul>
   </section>
+  <section class="container">
+    <h2>I Recently wrote</h2>
+    {{ range where .Data.Pages "Type" "blog" }}
+      <p>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <br>
+        <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span>
+      </p>
+    {{ end }}
+  </section>
   <section class="container ">
     <h2>Organising Conferences</h2>
     <p>I founded and ❤️ organising
