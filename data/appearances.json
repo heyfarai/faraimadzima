@@ -1,139 +1,168 @@
-[
-    {
-        "eventName": "CanUX",
-        "place": "Ottawa, Canada",
-        "talk": "Cultural bias in design(ers) - Talk",
-        "eventDate": "2019-10-30",
-        "role": "Speaker",
-        "url": "https://canux.io/farai-madzima/"
-    },
-    {
-        "eventName": "Leading Design - London",
-        "place": "London, UK",
-        "talk": "Cultural bias in design(ers) - Talk",
-        "eventDate": "2019-11-06",
-        "role": "Speaker",
-        "url": "https://2019.leadingdesignconf.com/london"
-    },
-    {
-        "eventName": "An Event Apart",
-        "place": "Denver, USA",
-        "talk": "Working Together in Diverse Teams ",
-        "eventDate": "2019-10-28",
-        "role": "Speaker",
-        "url": "https://aneventapart.com/event/denver-2019#s17397"
-    },
-    {
-        "eventName": "Leading Design - New York",
-        "place": "New York, USA",
-        "talk": "The only one of your kind in the room: Perils and opportunities.",
-        "eventDate": "2019-06-19",
-        "role": "Speaker",
-        "url": "https://2019.leadingdesignconf.com/newyork/speakers/farai-madzima"
-    },
-    {
-        "eventName": "UXLx",
-        "place": "Lisbon, Portugal",
-        "talk": "Talk + Workshop",
-        "eventDate": "2019-05-21",
-        "role": "Speaker",
-        "url": "https://www.ux-lx.com/speakers/farai_madzima.html"
-    },
-    {
-        "eventName": "Fluxible",
-        "place": "Waterloo, Canada",
-        "talk": "Cultural bias in design(ers)",
-        "eventDate": "2018-09-22",
-        "role": "Speaker",
-        "url": "https://www.fluxible.ca/speakers/farai-madzima/"
-    },
-    {
-        "eventName": "UX Australia",
-        "place": "Melbourne, Australia",
-        "talk": "Keynote",
-        "eventDate": "2018-08-31",
-        "role": "Keynote",
-        "url": "http://www.uxaustralia.com.au/news/fourth-ux-australia-keynote-speaker-announced"
-    },
-    {
-        "eventName": "UX Week",
-        "place": "San Francisco, USA",
-        "talk": "Diverse teams: Working together across cultures - Workshop",
-        "eventDate": "2018-08-24",
-        "role": "Speaker",
-        "url": "http://uxweek.com/workshops/diverse-teams-working-together-across-cultures"
-    },
-    {
-        "eventName": "Design & Content Conference",
-        "place": "Vancouver, Canada",
-        "talk": "Cultural bias in design(ers)",
-        "eventDate": "2018-07-27",
-        "role": "Speaker",
-        "url": "https://content.design/speaker/farai-madzima"
-    },
-    {
-        "eventName": "Interaction 18",
-        "place": "Lyon, France",
-        "talk": "Cultural bias in design(ers)",
-        "eventDate": "2018-02-08",
-        "role": "Speaker",
-        "url": "https://interaction18.ixda.org/program/talk-can-being-african-make-you-a-bad-designer----cultural-bias-in-design-madzima-farai/"
-    },
-    {
-        "eventName": "Automattic People Series",
-        "place": "Remote",
-        "talk": "Bias in multicultural teams",
-        "eventDate": "2018-04-17",
-        "role": "Speaker",
-        "url": "https://automattic.com/diversity-and-inclusion/"
-    },
-    {
-        "eventName": "IA Summit",
-        "place": "Chicago, USA",
-        "talk": "Cultural bias in design(ers)",
-        "eventDate": "2018-03-25",
-        "role": "Speaker",
-        "url": "http://www.iasummit.org/talk/can-african-make-bad-designer-cultural-bias-design/"
-    },
-    {
-        "eventName": "Pixel Up!",
-        "place": "Johannesburg, South Africa",
-        "talk": "Cultural bias in design(ers)",
-        "eventDate": "2018-03-12",
-        "role": "Speaker",
-        "url": "https://pixelup.co.za/speakers/farai-madzima/#cultural-bias-in-design-ers"
-    },
-    {
-        "eventName": "EOH Connect 2017",
-        "place": "Johannesburg, South Africa",
-        "talk": "Design value and digital business",
-        "eventDate": "2017-03-05",
-        "role": "Internal",
-        "url": ""
-    },
-    {
-        "eventName": "DVT Insights",
-        "place": "Johannesburg, South Africa",
-        "talk": "Design in Enterprise is Difficult in South Africa",
-        "eventDate": "2017-10-25",
-        "role": "Internal",
-        "url": "https://speakerdeck.com/farai/design-in-enterprise-is-difficult-in-south-africa"
-    },
-    {
-        "eventName": "Gordon Institute of Business Science",
-        "place": "Johannesburg, South Africa",
-        "talk": "Design thinking in business",
-        "eventDate": "2016-07-15",
-        "role": "Speaker",
-        "url": "https://www.youtube.com/watch?v=IWS9K_rxmOY"
-    },
-    {
-        "eventName": "World Interaction Design Day 2018",
-        "place": "Toronto, Canada",
-        "talk": "Our team is diverse. Now what?",
-        "eventDate": "2018-09-25",
-        "role": "Speaker",
-        "url": "https://www.eventbrite.ca/e/world-interaction-design-day-the-power-of-diversity-in-design-tickets-49042398133"
-    }
+[{
+    "eventName": "An Event Apart Minneapolis",
+    "place": "Minneapolis, USA",
+    "talk": "Working Together in Diverse Teams ",
+    "eventDate": "2020-08-17",
+    "role": "Speaker",
+    "url": "https://aneventapart.com/event/minneapolis-2020#schedule"
+  },
+  {
+    "eventName": "Pixel Up!",
+    "place": "Cape Town, South Africa",
+    "talk": "Workshop - TBC",
+    "eventDate": "2020-05-06",
+    "role": "Speaker",
+    "url": "https://pixelup.co.za"
+  },
+  {
+    "eventName": "An Event Apart Orlando",
+    "place": "Orlando, USA",
+    "talk": "Working Together in Diverse Teams ",
+    "eventDate": "2020-10-05",
+    "role": "Speaker",
+    "url": "https://aneventapart.com/event/orlando-2020#schedule"
+  }, {
+    "eventName": "An Event Apart Boston",
+    "place": "Boston, USA",
+    "talk": "Working Together in Diverse Teams ",
+    "eventDate": "2020-06-29",
+    "role": "Speaker",
+    "url": "https://aneventapart.com/event/boston-2020#schedule"
+  },
+  {
+    "eventName": "CanUX",
+    "place": "Ottawa, Canada",
+    "talk": "Cultural bias in design(ers) - Talk",
+    "eventDate": "2019-10-30",
+    "role": "Speaker",
+    "url": "https://canux.io/farai-madzima/"
+  },
+  {
+    "eventName": "Leading Design - London",
+    "place": "London, UK",
+    "talk": "Cultural bias in design(ers) - Talk",
+    "eventDate": "2019-11-06",
+    "role": "Speaker",
+    "url": "https://2019.leadingdesignconf.com/london"
+  },
+  {
+    "eventName": "An Event Apart",
+    "place": "Denver, USA",
+    "talk": "Working Together in Diverse Teams ",
+    "eventDate": "2019-10-28",
+    "role": "Speaker",
+    "url": "https://aneventapart.com/event/denver-2019#s17397"
+  },
+  {
+    "eventName": "Leading Design - New York",
+    "place": "New York, USA",
+    "talk": "The only one of your kind in the room: Perils and opportunities.",
+    "eventDate": "2019-06-19",
+    "role": "Speaker",
+    "url": "https://2019.leadingdesignconf.com/newyork/speakers/farai-madzima"
+  },
+  {
+    "eventName": "UXLx",
+    "place": "Lisbon, Portugal",
+    "talk": "Talk + Workshop",
+    "eventDate": "2019-05-21",
+    "role": "Speaker",
+    "url": "https://www.ux-lx.com/speakers/farai_madzima.html"
+  },
+  {
+    "eventName": "Fluxible",
+    "place": "Waterloo, Canada",
+    "talk": "Cultural bias in design(ers)",
+    "eventDate": "2018-09-22",
+    "role": "Speaker",
+    "url": "https://www.fluxible.ca/speakers/farai-madzima/"
+  },
+  {
+    "eventName": "UX Australia",
+    "place": "Melbourne, Australia",
+    "talk": "Keynote",
+    "eventDate": "2018-08-31",
+    "role": "Keynote",
+    "url": "http://www.uxaustralia.com.au/news/fourth-ux-australia-keynote-speaker-announced"
+  },
+  {
+    "eventName": "UX Week",
+    "place": "San Francisco, USA",
+    "talk": "Diverse teams: Working together across cultures - Workshop",
+    "eventDate": "2018-08-24",
+    "role": "Speaker",
+    "url": "http://uxweek.com/workshops/diverse-teams-working-together-across-cultures"
+  },
+  {
+    "eventName": "Design & Content Conference",
+    "place": "Vancouver, Canada",
+    "talk": "Cultural bias in design(ers)",
+    "eventDate": "2018-07-27",
+    "role": "Speaker",
+    "url": "https://content.design/speaker/farai-madzima"
+  },
+  {
+    "eventName": "Interaction 18",
+    "place": "Lyon, France",
+    "talk": "Cultural bias in design(ers)",
+    "eventDate": "2018-02-08",
+    "role": "Speaker",
+    "url": "https://interaction18.ixda.org/program/talk-can-being-african-make-you-a-bad-designer----cultural-bias-in-design-madzima-farai/"
+  },
+  {
+    "eventName": "Automattic People Series",
+    "place": "Remote",
+    "talk": "Bias in multicultural teams",
+    "eventDate": "2018-04-17",
+    "role": "Speaker",
+    "url": "https://automattic.com/diversity-and-inclusion/"
+  },
+  {
+    "eventName": "IA Summit",
+    "place": "Chicago, USA",
+    "talk": "Cultural bias in design(ers)",
+    "eventDate": "2018-03-25",
+    "role": "Speaker",
+    "url": "http://www.iasummit.org/talk/can-african-make-bad-designer-cultural-bias-design/"
+  },
+  {
+    "eventName": "Pixel Up!",
+    "place": "Johannesburg, South Africa",
+    "talk": "Cultural bias in design(ers)",
+    "eventDate": "2018-03-12",
+    "role": "Speaker",
+    "url": "https://pixelup.co.za/speakers/farai-madzima/#cultural-bias-in-design-ers"
+  },
+  {
+    "eventName": "EOH Connect 2017",
+    "place": "Johannesburg, South Africa",
+    "talk": "Design value and digital business",
+    "eventDate": "2017-03-05",
+    "role": "Internal",
+    "url": ""
+  },
+  {
+    "eventName": "DVT Insights",
+    "place": "Johannesburg, South Africa",
+    "talk": "Design in Enterprise is Difficult in South Africa",
+    "eventDate": "2017-10-25",
+    "role": "Internal",
+    "url": "https://speakerdeck.com/farai/design-in-enterprise-is-difficult-in-south-africa"
+  },
+  {
+    "eventName": "Gordon Institute of Business Science",
+    "place": "Johannesburg, South Africa",
+    "talk": "Design thinking in business",
+    "eventDate": "2016-07-15",
+    "role": "Speaker",
+    "url": "https://www.youtube.com/watch?v=IWS9K_rxmOY"
+  },
+  {
+    "eventName": "World Interaction Design Day 2018",
+    "place": "Toronto, Canada",
+    "talk": "Our team is diverse. Now what?",
+    "eventDate": "2018-09-25",
+    "role": "Speaker",
+    "url": "https://www.eventbrite.ca/e/world-interaction-design-day-the-power-of-diversity-in-design-tickets-49042398133"
+  }
 ]
-
