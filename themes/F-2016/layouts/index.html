@@ -37,6 +37,16 @@
       <strong>working effectively in multicultural teams</strong>. If you’d like me to speak at a public or private event, catch me on
       <strong>farai (at) pixelup.co.za</strong>.</p>
 
+    <h2>Up next</h2>
+    <ul>
+      {{ range sort .Site.Data.appearances ".eventDate" "asc" }}
+        {{ if gt (time .eventDate).Unix now.Unix   }}
+          {{ if eq (time .eventDate).Year 2020   }}
+            {{ partial "_appearance_li.html" . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </ul>
   </section>
   <section class="container">
     <h3>Video of my talk at
@@ -51,17 +61,6 @@
     <br>
   </section>
   <section class="container">
-    <h2>Up next</h2>
-    <h3>2020</h3>
-    <ul>
-      {{ range sort .Site.Data.appearances ".eventDate" "asc" }}
-        {{ if gt (time .eventDate).Unix now.Unix   }}
-          {{ if eq (time .eventDate).Year 2020   }}
-            {{ partial "_appearance_li.html" . }}
-          {{ end }}
-        {{ end }}
-      {{ end }}
-    </ul>
     <h2>Past events I've spoken at</h2>
     <h3>2019</h3>
     <ul>
