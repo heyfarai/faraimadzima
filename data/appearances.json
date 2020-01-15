@@ -1,4 +1,5 @@
-[{
+[
+  {
     "eventName": "An Event Apart Minneapolis",
     "place": "Minneapolis, USA",
     "talk": "Working Together in Diverse Teams ",
@@ -21,7 +22,8 @@
     "eventDate": "2020-10-05",
     "role": "Speaker",
     "url": "https://aneventapart.com/event/orlando-2020#schedule"
-  }, {
+  },
+  {
     "eventName": "An Event Apart Boston",
     "place": "Boston, USA",
     "talk": "Working Together in Diverse Teams ",
@@ -83,7 +85,7 @@
     "talk": "Keynote",
     "eventDate": "2018-08-31",
     "role": "Keynote",
-    "url": "http://www.uxaustralia.com.au/news/fourth-ux-australia-keynote-speaker-announced"
+    "url": "https://www.uxaustralia.com.au/news/fourth-ux-australia-keynote-speaker-announced"
   },
   {
     "eventName": "UX Week",
@@ -91,7 +93,7 @@
     "talk": "Diverse teams: Working together across cultures - Workshop",
     "eventDate": "2018-08-24",
     "role": "Speaker",
-    "url": "http://uxweek.com/workshops/diverse-teams-working-together-across-cultures"
+    "url": "https://uxweek.com/workshops/diverse-teams-working-together-across-cultures"
   },
   {
     "eventName": "Design & Content Conference",
@@ -123,7 +125,7 @@
     "talk": "Cultural bias in design(ers)",
     "eventDate": "2018-03-25",
     "role": "Speaker",
-    "url": "http://www.iasummit.org/talk/can-african-make-bad-designer-cultural-bias-design/"
+    "url": "https://www.iasummit.org/talk/can-african-make-bad-designer-cultural-bias-design/"
   },
   {
     "eventName": "Pixel Up!",
