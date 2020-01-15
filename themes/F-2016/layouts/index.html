@@ -17,6 +17,7 @@
     </header>
     <main>
       <!-- <section class="container"> {{ if gt (len (where .Data.Pages "Type" "blog")) 0 }} <h2>I Recently wrote</h2> {{ range where .Data.Pages "Type" "blog" }} <p> <a href="{{ .Permalink }}">{{ .Title }}</a> <br> <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span> </p> {{ end }} {{ end }} </section> -->
+<<<<<<< HEAD
       <section id="coaching" class="container">
         <h2>Coaching for managers who care</h2>
         <p><i>People stuff is hard.</i> But you care. And you want to be better at it because, like me, you believe people matter. You want to grow your people leadership skills and unlock the next level of what you can achieve.</p>
@@ -30,6 +31,38 @@
           <strong>working effectively in multicultural teams</strong>. If you’d like me to speak at a public or private
           event, catch me on
           <strong>farai (at) pixelup.co.za</strong>.</p>
+=======
+      <section class="container">
+        <h2>Interaction design</h2>
+        <p>I hang with the logistics experience design leadership team at
+          <a href="https://shopify.com">Shopify</a>, where we’re building next-generation ecommerce tools that make commerce easier for everyone. In a past life, in South Africa, I led the experience design team at
+          <a href="https://standardbank.co.za">Standard Bank Group</a>, Africa's largest bank.
+        </p>
+    </ul>
+  </section>
+  <section class="container">
+    <h2>I Recently wrote</h2>
+    {{ range where .Data.Pages "Type" "blog" }}
+      <p>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <br>
+        <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span>
+      </p>
+    {{ end }}
+  </section>
+  <section class="container ">
+    <h2>Organising Conferences</h2>
+    <p>I founded and ❤️ organising
+      <a href="https://pixelup.co.za">Pixel Up!</a>
+      a UX and design conference. These events exist to help bridge the gap between designers and developers in Africa with those from around the world.
+    </p>
+  </section>
+  <section id="speaking" class="container">
+    <h2>Speaking and Workshops</h2>
+    <p>I’ve been lucky to speak around the world. These days I'm focussed on talking about
+      <strong>working effectively in multicultural teams</strong>. If you’d like me to speak at a public or private event, catch me on
+      <strong>farai (at) pixelup.co.za</strong>.</p>
+>>>>>>> 6cba113 (replaced article index)
 
         <h2>Up next</h2>
         <ul>
