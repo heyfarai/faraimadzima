@@ -8,7 +8,7 @@
                 <div class="sponsor-list">
                     {{ range $.Site.Data.sponsors }}
                     <div class="sponsor">
-                        <a href="{{ .url }}"><img alt="{{ .description }}" src="{{ .logo_url }}" /></a>
+                        <a href="{{ .Params.url }}"><img alt="{{ .description }}" src="{{ .logo_url }}" /></a>
                     </div>
                     {{ end }}
                 </div>

@@ -1,50 +1,106 @@
-
-  {{ partial "default_head.html" . }}
-
-      <div class="top-bar">
-          <div class="top-bar__layout container">
-              <a id="toggle" class="top-bar__toggle" href="#">
-                  <div class="toggle__patty"></div>
-              </a>
-              <div class="logo top-bar__logo">
-                  <h1 class="top-bar__site-heading">
-                      <a href="/">Farai Madzima</a><br />
-                  </h1>
-              </div>
-          </div>
+{{ partial "default_head.html" . }}
+<div class="errythang section typeset">
+  <div class="single-measure">
+    <header class="container">
+      <div class="avatar-wrapper">
+        <img data-src="/img/smiley-farai-madzima-3-4.jpg" alt="Farai with a bushy beard, smiling" class="lazy avatar" src="/img/smiley-farai-madzima-3-4--tn.jpg">
       </div>
-    		<div class="content-wrapper">
-                <div class="section-layout section-layout--no-padding">
-                    <section class="section typeset container">
-                        <h2 class="">Peace!</h2>
-                        <p>I'm an interaction designer, conference organiser, writer and speaker living in Johannesburg, the world's largest man made forest.</p>
-                    </section>
-                    <section class="section typeset container">
-                        <h2>Interaction design</h2>
-                        <ul class="no-bullet">
-                            <li>I leading to lead a great design team at the Standard Bank Group. We work on large,  complex, design challenges to try make money matters simple to understand, and simple to manage for everyone. </li>
-                        </ul>
-                    </section>
-                    <section class="section typeset container">
-                        <h2>Organising Conferences</h2>
-                        <ul class="no-bullet">
-                            <li>I co-organise two conferences in South Africa: <a href="https://pixelup.co.za">PIXEL UP!</a> an international ux and design conference, and <a href="https://sourceup.co.za">SOURCE UP!</a>, an international front-end web development conference.</li>
-                        </ul>
-                    </section>
-                    <!-- <section class="section typeset container">
-                        <h2 class="section__heading--blue">Writing</h2>
-                        <ul class="no-bullet">
-                            <li><a href="">Should your boss learn to design?</a></li>
-                            <li><a href="">We are all learning: Designing SA'S first digital product conference</a></li>
-                        </ul>
-                    </section>
-                    <section class="section typeset container">
-                        <h2 class="section__heading--blue">Speaking</h2>
-                        <p>Peace! I'm an interaction designer, speaker, conference organiser and writer from Johannesburg. I host workshops and work with nice people on websites.</p>
-                    </section> -->
-                </article>
-                </div>
-    		</div>
+      <h1 class="">Peace!</h1>
+      <p>
+        <strong>
+          <span class="firstcharacter">👋🏾</span>
+          I'm Farai Madzima, a Zimbabwean UX designer, manager, conference organiser, and
+          <a href="#speaking">speaker</a>
+          living in Canada.</strong>
+      </p>
+    </header>
+    <main>
+      <!-- <section class="container"> {{ if gt (len (where .Data.Pages "Type" "blog")) 0 }} <h2>I Recently wrote</h2> {{ range where .Data.Pages "Type" "blog" }} <p> <a href="{{ .Permalink }}">{{ .Title }}</a> <br> <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span> </p> {{ end }} {{ end }} </section> -->
+      <section class="container">
+        <h2>Interaction design</h2>
+        <p>I hang with the logistics experience design leadership team at
+          <a href="https://shopify.com">Shopify</a>, where we’re building next-generation ecommerce tools that make commerce easier for everyone. In a past life, in South Africa, I led the experience design team at
+          <a href="https://standardbank.co.za">Standard Bank Group</a>, Africa's largest bank.
+        </p>
+    </ul>
+  </section>
+  <section class="container ">
+    <h2>Organising Conferences</h2>
+    <p>I founded and ❤️ organising
+      <a href="https://pixelup.co.za">Pixel Up!</a>
+      a UX and design conference. These events exist to help bridge the gap between designers and developers in Africa with those from around the world.
+    </p>
+  </section>
+  <section id="speaking" class="container">
+    <h2>Speaking and Workshops</h2>
+    <p>I’ve been lucky to speak around the world. These days I'm focussed on talking about
+      <strong>working effectively in multicultural teams</strong>. If you’d like me to speak at a public or private event, catch me on
+      <strong>farai (at) pixelup.co.za</strong>.</p>
 
+    <h2>Up next</h2>
+    <ul>
+      {{ range sort .Site.Data.appearances ".eventDate" "asc" }}
+        {{ if gt (time .eventDate).Unix now.Unix   }}
+          {{ if eq (time .eventDate).Year 2020   }}
+            {{ partial "_appearance_li.html" . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </ul>
+  </section>
+  <section class="container">
+    <h3>Video of my talk at
+      <a href="https://2019.leadingdesignconf.com/newyork">Leading Design New York</a>
+    </h3>
+    <br>
+    <div style="padding:56.25% 0 0 0;position:relative;">
+      <iframe title="talk-video" src="https://player.vimeo.com/video/350720470?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <!-- <div class="video"> <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe title="talk-video" src="https://www.youtube.com/embed/IWS9K_rxmOY?rel=0" frameborder="0" allowfullscreen="" allow="autoplay; encrypted-media"></iframe></div> </div> -->
+    <br>
+  </section>
+  <section class="container">
+    <h2>Past events I've spoken at</h2>
+    <h3>2019</h3>
+    <ul>
+      {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
+        {{ if lt (time .eventDate).Unix now.Unix   }}
+          {{ if eq (time .eventDate).Year 2019   }}
+            {{ partial "_appearance_li.html" . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </ul>
+    <h3>2018</h3>
+    <ul>
+      {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
+        {{ if lt (time .eventDate).Unix now.Unix   }}
+          {{ if eq (time .eventDate).Year 2018   }}
+            {{ partial "_appearance_li.html" . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </ul>
+    <h3>2017</h3>
+    <ul>
+      {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
+        {{ if eq (time .eventDate).Year 2017   }}
+          {{ partial "_appearance_li.html" . }}
+        {{ end }}
+      {{ end }}
+    </ul>
+    <h3>2016</h3>
+    <ul>
+      {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
+        {{ if eq (time .eventDate).Year 2016   }}
+          {{ partial "_appearance_li.html" . }}
+        {{ end }}
+      {{ end }}
+    </ul>
+  </section>
+</main>
+</div>
+</div>
 
-  {{ partial "default_foot.html" . }}
+{{ partial "default_foot.html" . }}

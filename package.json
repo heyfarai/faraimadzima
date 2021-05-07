@@ -3,5 +3,8 @@
     "build": {
       "engine": "hugo"
     }
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }

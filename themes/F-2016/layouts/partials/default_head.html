@@ -1,52 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    {{ .Hugo.Generator }}
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    {{ if eq .URL "/" }}
+    <meta name="author" content="Farai Madzima">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    {{ if eq .Params.url "/" }}
     <title>{{ .Title }}</title>
     <meta property='og:title' content="{{ .Title }}">
     <meta property="og:type" content="website">
     {{ else }}
-    <title>{{ .Title }} - {{ .Site.Title }}</title>
-    <meta property='og:title' content="{{ .Title }} - {{ .Site.Title }}">
+    <title>{{ .Title }} — {{ .Site.Title }}</title>
+    <meta property='og:title' content="{{ .Title }} — {{ .Site.Title }}">
     <meta property="og:type" content="article">
     {{ end }}
 
     <meta property="og:url" content="{{ .Permalink }}">
-    {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
-    {{ with .Params.image }}<meta property="og:image" content="images/{{ . }}">{{ end }}
+    <meta name="description" content="{{ .Site.Params.Description }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.AvatarImg }}" />
 
-    <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro:700" rel="stylesheet">
-    <link rel="stylesheet" href="/css/uxguy.css">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@farai_uxguy" />
+    <meta name="twitter:creator" content="@farai_uxguy" />
+    <meta property="og:description" content="{{ .Site.Params.Description }}" />
 
+    <link rel="preload" href="/js/scripts.js" as="script">
+    <link rel="stylesheet" href="/css/style.css">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="/android-chrome-512x512.png" sizes="512x512">
+    <link rel="icon" type="image/png" href="/android-chrome-256x256.png" sizes="256x256">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/android-chrome-144x144.png" sizes="144x144">
+    <link rel="icon" type="image/png" href="/android-chrome-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/android-chrome-72x72.png" sizes="72x72">
+    <link rel="icon" type="image/png" href="/android-chrome-48x48.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="/android-chrome-36x36.png" sizes="36x36">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#828282">
-    <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff1935">
+    <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#151242">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400 i,700" rel="stylesheet">
 
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Farai Madzima",
+        "url": "http://faraimadzima.com",
+        "sameAs": [
+          "http://instagram.com/farai",
+          "http://www.linkedin.com/in/farai",
+          "http://twitter.com/farai_uxguy"
+        ]
+      }
+    </script>
   </head>
 
   <body>

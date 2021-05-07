@@ -19,12 +19,12 @@
         <a href="#">{{ .Pre }} {{ .Name }}</a>
         <ul>
           {{ range .Children }}
-          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          <li><a href="{{ .Params.url }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
       </li>
       {{ else }}
-      <li><a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a></li>
+      <li><a href="{{ .Params.url }}">{{ .Pre }} {{ .Name }}</a></li>
       {{ end }}
       {{end}}
     </ul>
