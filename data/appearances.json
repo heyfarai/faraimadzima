@@ -1,35 +1,26 @@
 [
   {
-    "eventName": "An Event Apart Minneapolis",
-    "place": "Minneapolis, USA",
-    "talk": "Working Together in Diverse Teams ",
-    "eventDate": "2020-08-17",
+    "eventName": "An Event Apart Fall Summit",
+    "place": "Online",
+    "talk": "Working Together in Diverse Teams",
+    "eventDate": "2020-10-27",
     "role": "Speaker",
-    "url": "https://aneventapart.com/event/minneapolis-2020#schedule"
+    "url": "https://aneventapart.com/event/online-1020#s17397"
+  },{
+    "eventName": "Clarity2020",
+    "place": "Online",
+    "talk": "Designing teams. Designing systems.",
+    "eventDate": "2020-09-04",
+    "role": "Speaker",
+    "url": "https://www.clarityconf.com/session/designing-teams-designing-systems"
   },
   {
-    "eventName": "Pixel Up!",
-    "place": "Cape Town, South Africa",
-    "talk": "Workshop - TBC",
-    "eventDate": "2020-05-06",
+    "eventName": "FITC Spotlight UX (Online)",
+    "place": "Online",
+    "talk": "Designing 1:1 meetings that don’t suck",
+    "eventDate": "2021-07-15",
     "role": "Speaker",
-    "url": "https://pixelup.co.za"
-  },
-  {
-    "eventName": "An Event Apart Orlando",
-    "place": "Orlando, USA",
-    "talk": "Working Together in Diverse Teams ",
-    "eventDate": "2020-10-05",
-    "role": "Speaker",
-    "url": "https://aneventapart.com/event/orlando-2020#schedule"
-  },
-  {
-    "eventName": "An Event Apart Boston",
-    "place": "Boston, USA",
-    "talk": "Working Together in Diverse Teams ",
-    "eventDate": "2020-06-29",
-    "role": "Speaker",
-    "url": "https://aneventapart.com/event/boston-2020#schedule"
+    "url": "https://fitc.ca/event/slux21/"
   },
   {
     "eventName": "CanUX",

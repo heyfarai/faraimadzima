@@ -3,13 +3,15 @@
   <div class="single-measure">
     <header class="container">
       <div class="avatar-wrapper">
-        <img data-src="/img/smiley-farai-madzima-3-4.jpg" alt="Farai with a bushy beard, smiling" class="lazy avatar" src="/img/smiley-farai-madzima-3-4--tn.jpg">
+        <img data-src="/img/smiley-farai-madzima-3-4.jpg" alt="Farai with a bushy beard, smiling" class="lazy avatar"
+          src="/img/smiley-farai-madzima-3-4--tn.jpg">
       </div>
-      <h1 class="">Peace!</h1>
+      <h1>Peace!</h1>
       <p>
         <strong>
           <span class="firstcharacter">👋🏾</span>
-          I'm Farai Madzima, a Zimbabwean UX designer, manager, conference organiser, and
+          I'm Farai Madzima, a Zimbabwean UX manager, <a href="#conferences">conference organiser</a>,
+          and
           <a href="#speaking">speaker</a>
           living in Canada.</strong>
       </p>
@@ -18,89 +20,103 @@
       <!-- <section class="container"> {{ if gt (len (where .Data.Pages "Type" "blog")) 0 }} <h2>I Recently wrote</h2> {{ range where .Data.Pages "Type" "blog" }} <p> <a href="{{ .Permalink }}">{{ .Title }}</a> <br> <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span> </p> {{ end }} {{ end }} </section> -->
       <section class="container">
         <h2>Interaction design</h2>
-        <p>I hang with the logistics experience design leadership team at
+        <p>I hang with the Inventory experience design leadership team at
           <a href="https://shopify.com">Shopify</a>, where we’re building next-generation ecommerce tools that make commerce easier for everyone. In a past life, in South Africa, I led the experience design team at
           <a href="https://standardbank.co.za">Standard Bank Group</a>, Africa's largest bank.
         </p>
-    </ul>
-  </section>
-  <section class="container ">
-    <h2>Organising Conferences</h2>
-    <p>I founded and ❤️ organising
-      <a href="https://pixelup.co.za">Pixel Up!</a>
-      a UX and design conference. These events exist to help bridge the gap between designers and developers in Africa with those from around the world.
-    </p>
-  </section>
-  <section id="speaking" class="container">
-    <h2>Speaking and Workshops</h2>
-    <p>I’ve been lucky to speak around the world. These days I'm focussed on talking about
-      <strong>working effectively in multicultural teams</strong>. If you’d like me to speak at a public or private event, catch me on
-      <strong>farai (at) pixelup.co.za</strong>.</p>
+        </ul>
+      </section>
+      <section id="conferences" class="container ">
+        <h2>Organising Conferences</h2>
+        <p>I founded and ❤️ organising
+          <a href="https://pixelup.co.za">Pixel Up!</a>
+          a UX and design conference. These events exist to help bridge the gap between designers and developers in Africa with those from around the world.
+        </p>
+      </section>
+      <section id="speaking" class="container">
+        <h2>Speaking and Workshops</h2>
+        <p>I speak around the world and online. These days I'm focussed on talking about
+          <strong>working effectively in multicultural teams</strong>. If you’d like me to speak at a public or private
+          event, catch me on
+          <strong>farai (at) pixelup.co.za</strong>.</p>
 
-    <h2>Up next</h2>
-    <ul>
-      {{ range sort .Site.Data.appearances ".eventDate" "asc" }}
-        {{ if gt (time .eventDate).Unix now.Unix   }}
+        <h2>Up next</h2>
+        <ul>
+          {{ range sort .Site.Data.appearances ".eventDate" "asc" }}
+          {{ if gt (time .eventDate).Unix now.Unix   }}
+          {{ if eq (time .eventDate).Year 2021   }}
+          {{ partial "_appearance_li.html" . }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </ul>
+      </section>
+      <section class="container">
+        <h3>Video of my talk at
+          <a href="https://2019.leadingdesignconf.com/newyork">Leading Design 2019 (New York) </a>
+        </h3>
+        <br>
+        <div style="padding:56.25% 0 0 0;position:relative;">
+          <iframe title="talk-video" src="https://player.vimeo.com/video/350720470?title=0&byline=0&portrait=0"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+            webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"
+            allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <!-- <div class="video"> <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe title="talk-video" src="https://www.youtube.com/embed/IWS9K_rxmOY?rel=0" frameborder="0" allowfullscreen="" allow="autoplay; encrypted-media"></iframe></div> </div> -->
+        <br>
+      </section>
+      <section class="container">
+        <h2>Past events I've spoken at</h2>
+        <h3>2020</h3>
+        <ul>
+          {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
+          {{ if lt (time .eventDate).Unix now.Unix   }}
           {{ if eq (time .eventDate).Year 2020   }}
-            {{ partial "_appearance_li.html" . }}
+          {{ partial "_appearance_li.html" . }}
           {{ end }}
-        {{ end }}
-      {{ end }}
-    </ul>
-  </section>
-  <section class="container">
-    <h3>Video of my talk at
-      <a href="https://2019.leadingdesignconf.com/newyork">Leading Design New York</a>
-    </h3>
-    <br>
-    <div style="padding:56.25% 0 0 0;position:relative;">
-      <iframe title="talk-video" src="https://player.vimeo.com/video/350720470?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
-    </div>
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <!-- <div class="video"> <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe title="talk-video" src="https://www.youtube.com/embed/IWS9K_rxmOY?rel=0" frameborder="0" allowfullscreen="" allow="autoplay; encrypted-media"></iframe></div> </div> -->
-    <br>
-  </section>
-  <section class="container">
-    <h2>Past events I've spoken at</h2>
-    <h3>2019</h3>
-    <ul>
-      {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
-        {{ if lt (time .eventDate).Unix now.Unix   }}
+          {{ end }}
+          {{ end }}
+        </ul>
+        <h3>2019</h3>
+        <ul>
+          {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
+          {{ if lt (time .eventDate).Unix now.Unix   }}
           {{ if eq (time .eventDate).Year 2019   }}
-            {{ partial "_appearance_li.html" . }}
+          {{ partial "_appearance_li.html" . }}
           {{ end }}
-        {{ end }}
-      {{ end }}
-    </ul>
-    <h3>2018</h3>
-    <ul>
-      {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
-        {{ if lt (time .eventDate).Unix now.Unix   }}
+          {{ end }}
+          {{ end }}
+        </ul>
+        <h3>2018</h3>
+        <ul>
+          {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
+          {{ if lt (time .eventDate).Unix now.Unix   }}
           {{ if eq (time .eventDate).Year 2018   }}
-            {{ partial "_appearance_li.html" . }}
+          {{ partial "_appearance_li.html" . }}
           {{ end }}
-        {{ end }}
-      {{ end }}
-    </ul>
-    <h3>2017</h3>
-    <ul>
-      {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
-        {{ if eq (time .eventDate).Year 2017   }}
+          {{ end }}
+          {{ end }}
+        </ul>
+        <h3>2017</h3>
+        <ul>
+          {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
+          {{ if eq (time .eventDate).Year 2017   }}
           {{ partial "_appearance_li.html" . }}
-        {{ end }}
-      {{ end }}
-    </ul>
-    <h3>2016</h3>
-    <ul>
-      {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
-        {{ if eq (time .eventDate).Year 2016   }}
+          {{ end }}
+          {{ end }}
+        </ul>
+        <h3>2016</h3>
+        <ul>
+          {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
+          {{ if eq (time .eventDate).Year 2016   }}
           {{ partial "_appearance_li.html" . }}
-        {{ end }}
-      {{ end }}
-    </ul>
-  </section>
-</main>
-</div>
+          {{ end }}
+          {{ end }}
+        </ul>
+      </section>
+    </main>
+  </div>
 </div>
 
 {{ partial "default_foot.html" . }}
