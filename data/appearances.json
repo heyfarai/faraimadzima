@@ -1,5 +1,13 @@
 [
   {
+    "eventName": "Mind the Product",
+    "place": "San Francisco / Online",
+    "talk": "Working with strangers, well",
+    "eventDate": "2022-05-24",
+    "role": "Speaker",
+    "url": "https://www.mindtheproduct.com/mtpcon/san-francisco/speakers/"
+  },
+  {
     "eventName": "An Event Apart Fall Summit",
     "place": "Online",
     "talk": "Working Together in Diverse Teams",

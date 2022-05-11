@@ -10,28 +10,20 @@
       <p>
         <strong>
           <span class="firstcharacter">👋🏾</span>
-          I'm Farai Madzima, a Zimbabwean UX manager, <a href="#conferences">conference organiser</a>,
+          I'm Farai Madzima, I <a href="#coaching">coach</a> (certified) new and emerging managers,
           and
-          <a href="#speaking">speaker</a>
-          living in Canada.</strong>
+          <a href="#speaking">speak</a> at conferences globally, and <a href="#9-to-5">manage</a> designers at Shopify.
+          A Zimbabwean 🇿🇼 living in Canada 🇨🇦.</strong>
       </p>
     </header>
     <main>
       <!-- <section class="container"> {{ if gt (len (where .Data.Pages "Type" "blog")) 0 }} <h2>I Recently wrote</h2> {{ range where .Data.Pages "Type" "blog" }} <p> <a href="{{ .Permalink }}">{{ .Title }}</a> <br> <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span> </p> {{ end }} {{ end }} </section> -->
-      <section class="container">
-        <h2>Interaction design</h2>
-        <p>I hang with the Inventory experience design leadership team at
-          <a href="https://shopify.com">Shopify</a>, where we’re building next-generation ecommerce tools that make commerce easier for everyone. In a past life, in South Africa, I led the experience design team at
-          <a href="https://standardbank.co.za">Standard Bank Group</a>, Africa's largest bank.
-        </p>
+      <section id="coaching" class="container">
+        <h2>Coaching for managers who care</h2>
+        <p><i>People stuff is hard.</i> But you care. And you want to be better at it because, like me, you believe people matter. You've just started leading a team or have been doing it for a few years. You want to grow your people leadership skills and unlock the next level of what you can achieve.</p>
+        <p>I work with new and emerging leaders around the world to increase their people leadership skillset and develop effective, inclusive practices that make them better at people stuff.</p>
+        <p>Ready to get <i>Good at people stuff™️</i> <a href="">book a coaching call</a>.</p>
         </ul>
-      </section>
-      <section id="conferences" class="container ">
-        <h2>Organising Conferences</h2>
-        <p>I founded and ❤️ organising
-          <a href="https://pixelup.co.za">Pixel Up!</a>
-          a UX and design conference. These events exist to help bridge the gap between designers and developers in Africa with those from around the world.
-        </p>
       </section>
       <section id="speaking" class="container">
         <h2>Speaking and Workshops</h2>
@@ -44,7 +36,7 @@
         <ul>
           {{ range sort .Site.Data.appearances ".eventDate" "asc" }}
           {{ if gt (time .eventDate).Unix now.Unix   }}
-          {{ if eq (time .eventDate).Year 2021   }}
+          {{ if eq (time .eventDate).Year 2022   }}
           {{ partial "_appearance_li.html" . }}
           {{ end }}
           {{ end }}
@@ -68,6 +60,16 @@
       </section>
       <section class="container">
         <h2>Past events I've spoken at</h2>
+        <h3>2021</h3>
+        <ul>
+          {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
+          {{ if lt (time .eventDate).Unix now.Unix   }}
+          {{ if eq (time .eventDate).Year 2021   }}
+          {{ partial "_appearance_li.html" . }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </ul>
         <h3>2020</h3>
         <ul>
           {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
@@ -113,6 +115,21 @@
           {{ partial "_appearance_li.html" . }}
           {{ end }}
           {{ end }}
+        </ul>
+      </section>
+      <section id="conferences" class="container ">
+        <h2>Organising Conferences</h2>
+        <p>I founded and ❤️ organising
+          <a href="https://pixelup.co.za">Pixel Up!</a>
+          a UX and design conference. These events exist to help bridge the gap between designers and developers in Africa with those from around the world.
+        </p>
+      </section>
+      <section id="9-to-5" class="container">
+        <h2>Design leadership</h2>
+        <p>I hang with the Shopify Balance UX leadership team at
+          <a href="https://shopify.com">Shopify</a>, where we’re building next-generation ecommerce tools that make commerce easier for everyone. In a past life, in South Africa, I led the experience design team at
+          <a href="https://standardbank.co.za">Standard Bank Group</a>, Africa's largest bank.
+        </p>
         </ul>
       </section>
     </main>
