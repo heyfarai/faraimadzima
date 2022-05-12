@@ -5,6 +5,10 @@
     }
   },
   "dependencies": {
-    "gulp": "^3.9.1"
+    "del": "^6.0.0",
+    "gulp": "^4",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-hash": "^4.2.2",
+    "gulp-sass": "^5.1.0"
   }
 }
