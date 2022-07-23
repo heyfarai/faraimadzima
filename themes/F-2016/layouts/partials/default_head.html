@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="author" content="Farai Madzima" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {{ if eq .Params.url "/" }}
+    {{ if .Title }}
     <title>{{ .Title }}</title>
     <meta property="og:title" content="{{ .Title }}" />
     <meta property="og:type" content="website" />
@@ -28,7 +28,8 @@
 
     <link rel="preload" href="/js/scripts.js" as="script" />
     {{ $sass := resources.Get "scss/style.scss" }} {{ $style := $sass |
-    resources.ToCSS | resources.Fingerprint }}
+    resources.ToCSS | resources.Minify }}
+
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
     <link
