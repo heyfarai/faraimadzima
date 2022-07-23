@@ -17,3 +17,15 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "eventAppearances"
+    label: "Appearances"
+    folder: "content/eventAppearances"
+    create: true
+    slug: "{{eventDate}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Event name", name: "Event name", widget: "string" }
+      - { label: "Place", name: "place", widget: "string" }
+      - { label: "Appearance Title", name: "appearanceTitle", widget: "string" }
+      - { label: "Appearance Type", name: "appearanceType", widget: "list", default:["Keynote","Speaking", "Workshop","Panel"] }
