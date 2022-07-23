@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  repo: heyfarai/faraimadzima
+  branch: add-cms # Branch to update (optional; defaults to master)
+media_folder: static/img
+public_folder: /img
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "eventAppearances"
+    label: "Appearance"
+    folder: "content/eventAppearances"
+    create: true
+    slug: "{{eventDate}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Event name", name: "Event name", widget: "string" }
+      - { label: "Place", name: "place", widget: "string" }
+      - { label: "Appearance Title", name: "appearanceTitle", widget: "string" }
+      - label: "Appearance Type"
+        name: "appearanceType"
+        widget: "string"
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
