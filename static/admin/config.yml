@@ -28,4 +28,7 @@ collections:
       - { label: "Event name", name: "Event name", widget: "string" }
       - { label: "Place", name: "place", widget: "string" }
       - { label: "Appearance Title", name: "appearanceTitle", widget: "string" }
-      - { label: "Appearance Type", name: "appearanceType", widget: "list", default:["Speaking"] }
+      - label: "Appearance Type"
+        name: "appearanceType"
+        widget: "list"
+        default: ["Speaking"]
