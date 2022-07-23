@@ -11,9 +11,9 @@
 
     </header>
     <main>
+        <section class="container">
         {{ $posts := (where .Site.RegularPages "Type" "blog") }}
         {{ if gt (len $posts) 0 }}
-        <section class="container">
             <h2>Read my mind</h2>
             <ul class="module-blog-list">
             {{ range (where .Site.RegularPages "Type" "blog" | first 10) }}
@@ -23,8 +23,11 @@
                 </li>
             {{ end }}
             </ul>
+            {{ else }}
+            <h2>Read my mind</h2>
+            <p>I'm thinking about writing blog posts, I've even written some drafts. But I feel scared to publish, 'cos I listen to the imposter too much.</p>
+            {{ end }}
         </section>
-        {{ end }}
     </main>
   </div>
 
