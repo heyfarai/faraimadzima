@@ -30,5 +30,4 @@ collections:
       - { label: "Appearance Title", name: "appearanceTitle", widget: "string" }
       - label: "Appearance Type"
         name: "appearanceType"
-        widget: "list"
-        default: ["Speaking"]
+        widget: "string"
