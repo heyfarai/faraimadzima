@@ -1,0 +1,29 @@
+h1.post__header {
+  text-transform: none;
+}
+.post__meta {
+  text-align: center;
+  margin-top: -3rem;
+  padding-top: 0;
+  font-style: italic;
+  color: $captionColour;
+}
+.post__content {
+  margin-top: 3.5rem;
+}
+
+.module-blog-list {
+  li {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem !important;
+    .blog-post-title {
+      flex: max-content;
+      background-image: none;
+    }
+    .article-date {
+      flex: initial;
+      text-align: right;
+    }
+  }
+}

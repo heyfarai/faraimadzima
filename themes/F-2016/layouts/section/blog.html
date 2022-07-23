@@ -1,53 +1,33 @@
+{{ partial "default_head.html" . }}
+<div class="errythang section typeset">
+  <div class="single-measure">
+    <header class="container">
+      <div class="avatar-wrapper">
+                        <a href="/">
+                            <img data-src="/img/smiley-farai-madzima-3-4.jpg" alt="Farai with a bushy beard, smiling" class="lazy avatar" src="/img/smiley-farai-madzima-3-4--tn.jpg">
+                        </a>
+      </div>
+      <h1>Peace!</h1>
 
-  {{ partial "default_head.html" . }}
-            <div class="section-layout--sloping-bottom-left hero typeset">
-                <div class="hero__layout container">
-                    {{ range first 1 .Data.Pages }}
-                        {{ $author := .Params.author }}
-                        {{ $authorSlug :=  $author | urlize  }}
-                    <a href="/blog/{{ .Slug }}">
-                        <h1 class="hero__header post-hero">
-                            <small>PIXEL UP!Blog </small><br/>
-                            {{ .Title }}
-                        </h1>
-                        <div class="author-content">
-        					<img alt="" src="/img/people/{{ $authorSlug }}.img" srcset="/img/people/{{ $authorSlug }}.jpg" class="avatar avatar--round avatar--small avatar--gray photo" height="234" width="234" originals="234" scale="2">
-                            <p class="caption">by <span itemprop="author">{{ $author }}</span> </p>
-                        </div>
-                    </a>
-                    {{ end}}
-                </div>
-            </div>
-    		<div class="content-wrapper">
-                <div class="section-layout">
-                    <section class="section typeset container">
-						<div class="blog blog-article-list">
-                            {{ range sort .Data.Pages ".Date" "asc" }}
-                                {{ $author := .Params.author }}
-                                {{ $authorSlug :=  $author | urlize  }}
-                            <div class="blog-article-list__item post">
-                                <a href="/blog/articles-about/{{ .Slug }}" class="caption category-caption">
-                                    {{ range .Params.categories }}
-                                    {{ . }}
-                                    {{ end }}
-                                </a>
-    							<a href="/blog/{{ .Slug }}">
-                                    <h3 class="blog-title">{{ .Title }}</h3>
-    								{{ substr .Summary 0 140 }}
-                                    <br /><br />
-                                    <div class="author-content">
-                    					<img alt="" src="/img/people/{{ $authorSlug }}.img" srcset="/img/people/{{ $authorSlug }}.jpg" class="avatar avatar--round avatar--small avatar--gray photo" height="234" width="234" originals="234" scale="2">
-                                        <p class="caption">by <span itemprop="author">{{ $author }}</span> </p>
-                                    </div>
-    							</a>
-    						</div>
-                            {{ end }}
-                        </div>
-                    </section>
-                </div>
+    </header>
+    <main>
+        {{ $posts := (where .Site.RegularPages "Type" "blog") }}
+        {{ if gt (len $posts) 0 }}
+        <section class="container">
+            <h2>Read my mind</h2>
+            <ul class="module-blog-list">
+            {{ range (where .Site.RegularPages "Type" "blog" | first 10) }}
+                <li>
+                <a class="blog-post-title" href="{{ .Permalink }}">{{ .Title }}</a>
+                <span class="grey article-date">{{ .Date | time.Format ":date_medium" }}</span>
+                </li>
+            {{ end }}
+            </ul>
+        </section>
+        {{ end }}
+    </main>
+  </div>
 
-
-    		</div>
-
-
+  </div>
   {{ partial "default_foot.html" . }}
+</div>

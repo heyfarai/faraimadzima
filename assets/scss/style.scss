@@ -1,0 +1,48 @@
+/* CSS compiled from SCSS. */
+/* --------------------------------------- */
+
+// Import Sassline base.
+@import "sassline-base";
+
+// Import your project SCSS module partials.
+@import "modules/globals";
+@import "modules/nav";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/show-grid";
+@import "modules/avatar";
+@import "modules/blog";
+
+.firstcharacter {
+  font-size: 1.7rem;
+  line-height: 1.5rem;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.container {
+  padding: 0 2rem 1rem;
+}
+
+@keyframes up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.errythang {
+  animation-name: up;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 400ms;
+  animation-timing-function: cubic-bezier(0.2, 0, 0.1, 1);
+}
+.typeset h2 {
+  margin-bottom: 0.38596rem;
+}

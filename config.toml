@@ -3,6 +3,9 @@ languageCode = "en-us"
 publishdir = "public"
 title = "Farai Madzima — Designer, Speaker & Conference Organiser"
 theme = "F-2016"
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 [Params]
   Author = "Farai Madzima"
   description = "👋🏾 I'm Farai Madzima, a Zimbabwean interaction designer, conference organiser, and speaker living in Canada."

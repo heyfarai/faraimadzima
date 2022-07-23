@@ -1,27 +1,43 @@
-<div class="list">
-  {{ partial "default_head.html" . }}
-  <div class="row">
-    <div class="col-sm-9">
-
-      <header class="title"><h1>{{ .Title }}</h1></header>
-
-      <div class="articles">
-        <div class="row">
-          {{ range (.Paginate .Data.Pages).Pages }}
-          <div class="col-sm-4">
-            {{ .Render "li" }}
-          </div>
-          {{ end }}
-        </div>
+{{ partial "default_head.html" . }}
+<div class="errythang section typeset">
+  <div class="single-measure">
+    <header class="container">
+      <div class="avatar-wrapper">
+        <img data-src="/img/smiley-farai-madzima-3-4.jpg" alt="Farai with a bushy beard, smiling" class="lazy avatar"
+          src="/img/smiley-farai-madzima-3-4--tn.jpg">
       </div>
+      <h1>Peace!</h1>
+      <p>
+        <strong>
+          <span class="firstcharacter">👋🏾</span>
+          I <a href="#coaching">coach</a> managers on people leadership,
+          <a href="#speaking">speak at conferences</a> about building effective teams, and <a href="#9-to-5">manage</a> designers at Shopify.
+          A Zimbabwean 🇿🇼 living in Canada 🇨🇦.</strong>
+      </p>
+    </header>
+    <main>
+      <!-- <section class="container"> {{ if gt (len (where .Data.Pages "Type" "blog")) 0 }} <h2>I Recently wrote</h2> {{ range where .Data.Pages "Type" "blog" }} <p> <a href="{{ .Permalink }}">{{ .Title }}</a> <br> <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span> </p> {{ end }} {{ end }} </section> -->
+      <section id="coaching" class="container">
+        <h2>Coaching for managers who care</h2>
+        <p><i>People stuff is hard.</i> But you care. And you want to be better at it because, like me, you believe people matter. You want to grow your people leadership skills and unlock the next level of what you can achieve.</p>
+        <p>I work with new and emerging leaders around the world to increase their people leadership skillset and develop effective, inclusive practices that make them better at people stuff.</p>
+        <p>Ready to get <i>Good at people stuff?</i> <br><a href="https://fantastical.app/farai/intro-coaching-call">Book a coaching call with me </a>&rarr;</p>
+        </ul>
+      </section>
 
-      {{ partial "pagination.html" . }}
-
-    </div>
-
-    <div class="col-sm-3">
-      {{ partial "sidebar.html" . }}
-    </div>
+      <section class="container">
+        <h2>Read my mind</h2>
+        <ul class="module-blog-list">
+          {{ range (where .Site.RegularPages "Type" "blog" | first 5) }}
+            <li>
+              <a class="blog-post-title" href="{{ .Permalink }}">{{ .Title }}</a>
+              <span class="grey article-date">{{ .Date | time.Format ":date_medium" }}</span>
+            </li>
+          {{ end }}
+        </ul>
+      </section>
+    </main>
+  </div>
 
   </div>
   {{ partial "default_foot.html" . }}
