@@ -24,7 +24,7 @@ $authorSlug := $author | urlize }}
       </article>
     </section>
     {{ $lieID := .Params.id }} {{ $lies := (where .Site.RegularPages "Type"
-    "lies") }} {{ if gt (len $lies) 0 }}
+    "lies") }} {{ if gt (len $lies) 1 }}
     <section class="container">
       <br />
       <br />

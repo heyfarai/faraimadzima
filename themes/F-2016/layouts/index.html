@@ -17,13 +17,16 @@
     </header>
     <main>
       <!-- <section class="container"> {{ if gt (len (where .Data.Pages "Type" "blog")) 0 }} <h2>I Recently wrote</h2> {{ range where .Data.Pages "Type" "blog" }} <p> <a href="{{ .Permalink }}">{{ .Title }}</a> <br> <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span> </p> {{ end }} {{ end }} </section> -->
+      <article>
       <section id="coaching" class="container">
-        <h2>Coaching people managers</h2>
-        <p><i>People stuff is hard.</i> But you care. And you want to be better at it because, like me, you believe people matter. You want to grow your people leadership skills and unlock the next level of what you can achieve.</p>
+        <h2>Coaching</h2>
+        <p><i>I coach people managers.</i> But you care. And you want to be better at it because, like me, you believe people matter. You want to grow your people leadership skills and unlock the next level of what you can achieve.</p>
         <p>I work with new and emerging leaders around the world to increase their people leadership skillset and develop effective, inclusive practices that make them better at people stuff.</p>
         <p>Ready to get <i>Good at people stuff?</i> <br><a href="https://fantastical.app/farai/intro-coaching-call">Book a coaching call with me </a>&rarr;</p>
         </ul>
       </section>
+
+      </article>
         {{ $lies := (where .Site.RegularPages "Type" "lies") }}
         {{ if gt (len $lies) 0 }}
         <section class="container">
