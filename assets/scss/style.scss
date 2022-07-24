@@ -22,7 +22,8 @@
 }
 
 .container {
-  padding: 0 2rem 1rem;
+  padding: 0 2rem 3rem;
+  position: relative;
 }
 
 @keyframes up {
@@ -45,4 +46,18 @@
 }
 .typeset h2 {
   margin-bottom: 0.38596rem;
+}
+.item-appearance-list,
+.lie-list {
+  margin-bottom: 2rem;
+  li::before {
+    position: absolute;
+    left: -1ch;
+    content: "– ";
+    color: $primaryColour;
+    font-weight: bold;
+  }
+  li {
+    list-style-type: none;
+  }
 }

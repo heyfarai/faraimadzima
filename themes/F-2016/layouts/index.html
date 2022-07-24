@@ -18,13 +18,22 @@
     <main>
       <!-- <section class="container"> {{ if gt (len (where .Data.Pages "Type" "blog")) 0 }} <h2>I Recently wrote</h2> {{ range where .Data.Pages "Type" "blog" }} <p> <a href="{{ .Permalink }}">{{ .Title }}</a> <br> <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span> </p> {{ end }} {{ end }} </section> -->
       <section id="coaching" class="container">
-        <h2>Coaching for managers who care</h2>
+        <h2>Coaching people managers</h2>
         <p><i>People stuff is hard.</i> But you care. And you want to be better at it because, like me, you believe people matter. You want to grow your people leadership skills and unlock the next level of what you can achieve.</p>
         <p>I work with new and emerging leaders around the world to increase their people leadership skillset and develop effective, inclusive practices that make them better at people stuff.</p>
         <p>Ready to get <i>Good at people stuff?</i> <br><a href="https://fantastical.app/farai/intro-coaching-call">Book a coaching call with me </a>&rarr;</p>
         </ul>
       </section>
-        {{/*  {{ $posts := (where .Site.RegularPages "Type" "blog") }}
+        {{ $lies := (where .Site.RegularPages "Type" "lies") }}
+        {{ if gt (len $lies) 0 }}
+        <section class="container">
+            <h2>Lies about leadership</h2>
+            {{ partial "_lie-list.html" $lies }}
+        </section>
+        {{ end }}
+
+
+        {{ $posts := (where .Site.RegularPages "Type" "blog") }}
         {{ if gt (len $posts) 0 }}
         <section class="container">
             <h2>Read my mind</h2>
@@ -37,7 +46,7 @@
             {{ end }}
             </ul>
         </section>
-        {{ end }}  */}}
+        {{ end }}
       <section id="speaking" class="container">
         <h2>Speaking and Workshops</h2>
         <p>I speak around the world and online. These days I'm focussed on talking about
@@ -48,7 +57,7 @@
         {{ $posts := (where .Site.Data.appearances ".eventDate" "asc") }}
         {{ if gt (len $posts) 0 }}
         <h2>Up next</h2>
-        <ul>
+        <ul class="item-appearance-list">
           {{ range sort .Site.Data.appearances ".eventDate" "asc" }}
           {{ if gt (time .eventDate).Unix now.Unix   }}
           {{ if eq (time .eventDate).Year 2022   }}
@@ -77,7 +86,7 @@
       <section class="container">
         <h2>Past events I've spoken at</h2>
         <h3>2021</h3>
-        <ul>
+        <ul class="item-appearance-list">
           {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
           {{ if lt (time .eventDate).Unix now.Unix   }}
           {{ if eq (time .eventDate).Year 2021   }}
@@ -87,7 +96,7 @@
           {{ end }}
         </ul>
         <h3>2020</h3>
-        <ul>
+        <ul class="item-appearance-list">
           {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
           {{ if lt (time .eventDate).Unix now.Unix   }}
           {{ if eq (time .eventDate).Year 2020   }}
@@ -97,7 +106,7 @@
           {{ end }}
         </ul>
         <h3>2019</h3>
-        <ul>
+        <ul class="item-appearance-list">
           {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
           {{ if lt (time .eventDate).Unix now.Unix   }}
           {{ if eq (time .eventDate).Year 2019   }}
@@ -107,7 +116,7 @@
           {{ end }}
         </ul>
         <h3>2018</h3>
-        <ul>
+        <ul class="item-appearance-list">
           {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
           {{ if lt (time .eventDate).Unix now.Unix   }}
           {{ if eq (time .eventDate).Year 2018   }}
@@ -117,7 +126,7 @@
           {{ end }}
         </ul>
         <h3>2017</h3>
-        <ul>
+        <ul class="item-appearance-list">
           {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
           {{ if eq (time .eventDate).Year 2017   }}
           {{ partial "_appearance_li.html" . }}
@@ -125,7 +134,7 @@
           {{ end }}
         </ul>
         <h3>2016</h3>
-        <ul>
+        <ul class="item-appearance-list">
           {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
           {{ if eq (time .eventDate).Year 2016   }}
           {{ partial "_appearance_li.html" . }}

@@ -1,0 +1,26 @@
+{{ partial "default_head.html" . }}
+<div class="errythang section typeset">
+  <div class="single-measure">
+    <header class="container">
+      <div class="avatar-wrapper">
+        <a href="/">
+            <img data-src="/img/smiley-farai-madzima-3-4.jpg" alt="Farai with a bushy beard, smiling" class="lazy avatar" src="/img/smiley-farai-madzima-3-4--tn.jpg">
+        </a>
+      </div>
+      <h1>Peace!</h1>
+
+    </header>
+    <main>
+        {{ $lies := (where .Site.RegularPages "Type" "lies") }}
+        {{ if gt (len $lies) 0 }}
+        <section class="container">
+            <h2>Lies about leadership</h2>
+            {{ partial "_lie-list.html" $lies }}
+        </section>
+        {{ end }}
+    </main>
+  </div>
+
+  </div>
+  {{ partial "default_foot.html" . }}
+</div>

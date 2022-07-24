@@ -8,8 +8,9 @@
     <title>{{ .Title }}</title>
     <meta property="og:title" content="{{ .Title }}" />
     <meta property="og:type" content="website" />
-    {{ else }}
-    <title>{{ .Title }} — {{ .Site.Title }}</title>
+    {{ else }} {{ $prefix := ""}} {{ if eq .Section "lies" }} {{ $prefix :=
+    "Lie#" }} {{end}}
+    <title>$prefix{{ .Title }} — {{ .Site.Title }}</title>
     <meta property="og:title" content="{{ .Title }} — {{ .Site.Title }}" />
     <meta property="og:type" content="article" />
     {{ end }}

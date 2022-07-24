@@ -16,7 +16,8 @@ h1.post__header {
   li {
     display: flex;
     flex-direction: row;
-    margin-bottom: 0.5rem !important;
+    &.lie-list-item {
+    }
     .blog-post-title {
       flex: max-content;
       background-image: none;
@@ -24,6 +25,9 @@ h1.post__header {
     .article-date {
       flex: initial;
       text-align: right;
+    }
+    .lie-id {
+      margin-right: 1rem;
     }
   }
 }

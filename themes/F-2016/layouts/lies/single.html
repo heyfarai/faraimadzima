@@ -1,0 +1,46 @@
+{{ partial "default_head.html" . }} {{ $author := .Params.author }} {{
+$authorSlug := $author | urlize }}
+<div class="errythang section typeset">
+  <div class="single-measure">
+    <section class="container">
+      <div class="avatar-wrapper">
+        <a href="/lies">
+          <img
+            data-src="/img/smiley-farai-madzima-3-4.jpg"
+            alt="Farai with a bushy beard, smiling"
+            class="lazy avatar"
+            src="/img/smiley-farai-madzima-3-4--tn.jpg"
+          />
+        </a>
+      </div>
+    </section>
+    <section class="content-wrapper container">
+      <h1 class="post__header">Leadership Lie #{{ .Params.id }}</h1>
+      <p class="post__meta">By Farai Madzima</p>
+      <article class="post__content">
+        <p><strong>The Lie 👉🏾</strong> {{ .Params.lie }}</p>
+        <p><strong>The Facts 👉🏾</strong> {{ .Params.facts }}</p>
+        {{/* {{ .Content }} */}}
+      </article>
+    </section>
+    {{ $lieID := .Params.id }} {{ $lies := (where .Site.RegularPages "Type"
+    "lies") }} {{ if gt (len $lies) 0 }}
+    <section class="container">
+      <br />
+      <br />
+      <h2>More Lies</h2>
+      <ul class="module-blog-list lie-list">
+        {{ range ($lies | first 10) }} {{ if ne .Params.id $lieID }}
+        <li class="lie-list-item">
+          <span class="lie-id">#{{ .Params.id }}</span>
+          <a class="blog-post-title" href="{{ .Permalink }}">
+            {{ .Params.lie }}</a
+          >
+        </li>
+        {{ end }} {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+  </div>
+</div>
+{{ partial "default_foot.html" . }}

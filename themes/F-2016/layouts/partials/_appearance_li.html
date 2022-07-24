@@ -1,4 +1,8 @@
-<li>
-    <a href="{{ .url }}">{{ .eventName }}</a>, {{ .talk }}<br>
-    <span class="grey">{{ dateFormat "Jan 2, 2006" .eventDate  }} — {{ .place }} </span>
-</li> 
+<li class="item-appearance">
+  <a href="{{ .eventUrl }}">{{ .eventName }}</a><br />
+  <span>{{ .talk }} </span>
+  <br />
+  <span class="grey">
+    {{ dateFormat "Jan 2, 2006" .eventDate }} — {{ .place }}</span
+  >
+</li>

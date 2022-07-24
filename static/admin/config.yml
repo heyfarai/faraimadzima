@@ -24,12 +24,14 @@ collections:
     label: "Appearance"
     folder: "content/eventAppearances"
     create: true
-    slug: "{{eventDate}}-{{slug}}"
+    slug: "{{eventName}}-{{place}}"
     editor:
       preview: false
     fields:
-      - { label: "Event name", name: "Event name", widget: "string" }
+      - { label: "Event name", name: "eventName", widget: "string" }
+      - { label: "Event Date", name: "eventDate", widget: "datetime" }
       - { label: "Place", name: "place", widget: "string" }
+      - { label: "Event link", name: "eventUrl", widget: "string" }
       - { label: "Appearance Title", name: "appearanceTitle", widget: "string" }
       - label: "Appearance Type"
         name: "appearanceType"
@@ -37,3 +39,30 @@ collections:
       - label: "Tags"
         name: "tags"
         widget: "list"
+  - name: "lies"
+    label: "Lies"
+    folder: "content/lies"
+    create: true
+    slug: "lie-{{id}}-{{lie}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Lie", name: "lie", widget: "text" }
+      - { label: "Lie ID", name: "id", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Facts", name: "facts", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown", "required": false }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+      - label: "Categories"
+        name: "categories"
+        widget: "list"
+
+# when using the default proxy server port
+local_backend:
+  # when using a custom proxy server port
+  url: http://localhost:8081/api/v1
+  # when accessing the local site from a host other than 'localhost' or '127.0.0.1'
+  allowed_hosts: ["192.168.0.1"]
