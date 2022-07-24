@@ -1,11 +1,16 @@
 {{ partial "default_head.html" . }}
-<div class="errythang section typeset">
-  <div class="single-measure">
-    <header class="container">
+<div class="errythang errythang-grid typeset">
+
+  <header class="section-grid">
+    <div class="section-heading">
       <div class="avatar-wrapper">
         <img data-src="/img/smiley-farai-madzima-3-4.jpg" alt="Farai with a bushy beard, smiling" class="lazy avatar"
           src="/img/smiley-farai-madzima-3-4--tn.jpg">
       </div>
+
+    </div>
+    <div class="home-header">
+    <div class="section-content single-measure">
       <h1>Peace!</h1>
       <p>
         <strong>
@@ -14,32 +19,40 @@
           <a href="#speaking">speak at conferences</a> about building effective teams, and <a href="#9-to-5">manage</a> designers at Shopify.
           A Zimbabwean 🇿🇼 living in Canada 🇨🇦.</strong>
       </p>
-    </header>
-    <main>
-      <!-- <section class="container"> {{ if gt (len (where .Data.Pages "Type" "blog")) 0 }} <h2>I Recently wrote</h2> {{ range where .Data.Pages "Type" "blog" }} <p> <a href="{{ .Permalink }}">{{ .Title }}</a> <br> <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span> </p> {{ end }} {{ end }} </section> -->
-      <article>
-      <section id="coaching" class="container">
-        <h2>Coaching</h2>
-        <p><i>I coach people managers.</i> But you care. And you want to be better at it because, like me, you believe people matter. You want to grow your people leadership skills and unlock the next level of what you can achieve.</p>
-        <p>I work with new and emerging leaders around the world to increase their people leadership skillset and develop effective, inclusive practices that make them better at people stuff.</p>
-        <p>Ready to get <i>Good at people stuff?</i> <br><a href="https://fantastical.app/farai/intro-coaching-call">Book a coaching call with me </a>&rarr;</p>
-        </ul>
-      </section>
 
-      </article>
+    </div>
+
+    </div>
+    </header>
+      <!-- <section class="container"> {{ if gt (len (where .Data.Pages "Type" "blog")) 0 }} <h2>I Recently wrote</h2> {{ range where .Data.Pages "Type" "blog" }} <p> <a href="{{ .Permalink }}">{{ .Title }}</a> <br> <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span> </p> {{ end }} {{ end }} </section> -->
+     
+    <section id="coaching" class="section-grid">
+      <h2 class="section-heading">Coaching</h2>
+      <div class="section-content single-measure">
+      <p><i>I coach people managers.</i> But you care. And you want to be better at it because, like me, you believe people matter. You want to grow your people leadership skills and unlock the next level of what you can achieve.</p>
+      <p>I work with new and emerging leaders around the world to increase their people leadership skillset and develop effective, inclusive practices that make them better at people stuff.</p>
+      <p>Ready to get <i>Good at people stuff?</i> <br><a href="https://fantastical.app/farai/intro-coaching-call">Book a coaching call with me </a>&rarr;</p>
+      </div>
+    </section>
+
         {{ $lies := (where .Site.RegularPages "Type" "lies") }}
         {{ if gt (len $lies) 0 }}
-        <section class="container">
-            <h2>Lies about leadership</h2>
-            {{ partial "_lie-list.html" $lies }}
+        <section id="lies" class="section-grid">
+          <h2 class="section-heading">Lies about leadership</h2>
+          <div class="section-content single-measure">
+            <p>I didn't chose to become a manager. It just happened to me. Early on, I believed lots of misconceptions and lies about leadership that I had picked up through life experience. </p>
+            <p>Here are some of them:</p>
+              {{ partial "_lie-list.html" $lies }}
+          </div>
         </section>
         {{ end }}
 
 
         {{ $posts := (where .Site.RegularPages "Type" "blog") }}
         {{ if gt (len $posts) 0 }}
-        <section class="container">
-            <h2>Read my mind</h2>
+        <section id="blog" class="section-grid">
+            <h2 class="section-heading">Read my mind</h2>
+          <div class="section-content single-measure">
             <ul class="module-blog-list">
             {{ range (where .Site.RegularPages "Type" "blog" | first 10) }}
                 <li>
@@ -48,45 +61,46 @@
                 </li>
             {{ end }}
             </ul>
+            </div>
         </section>
         {{ end }}
-      <section id="speaking" class="container">
-        <h2>Speaking and Workshops</h2>
-        <p>I speak around the world and online. These days I'm focussed on talking about
-          <strong>working effectively in multicultural teams</strong>. If you’d like me to speak at a public or private
-          event, catch me on
-          <strong>farai (at) pixelup.co.za</strong>.</p>
+      <section id="speaking" class="section-grid">
+        <h2 class="section-heading">Speaking</h2>
+          <div class="section-content single-measure">
+            <p>I speak around the world and online. These days I'm focussed on talking about
+            <strong>working effectively in multicultural teams</strong>. If you’d like me to speak at a public or private
+            event, catch me on
+            <strong>farai (at) pixelup.co.za</strong>.</p>
 
-        {{ $posts := (where .Site.Data.appearances ".eventDate" "asc") }}
-        {{ if gt (len $posts) 0 }}
-        <h2>Up next</h2>
-        <ul class="item-appearance-list">
-          {{ range sort .Site.Data.appearances ".eventDate" "asc" }}
-          {{ if gt (time .eventDate).Unix now.Unix   }}
-          {{ if eq (time .eventDate).Year 2022   }}
-          {{ partial "_appearance_li.html" . }}
-          {{ end }}
-          {{ end }}
-          {{ end }}
-        </ul>
-        {{ end }}
-      </section>
-      <section class="container">
-        <h3>Video of my talk at
-          <a href="https://2019.leadingdesignconf.com/newyork">Leading Design 2019 (New York) </a>
-        </h3>
-        <br>
-        <div style="padding:56.25% 0 0 0;position:relative;">
-          <iframe title="talk-video" src="https://player.vimeo.com/video/350720470?title=0&byline=0&portrait=0"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
-            webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"
-            allowfullscreen="allowfullscreen"></iframe>
-        </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>
-        <!-- <div class="video"> <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe title="talk-video" src="https://www.youtube.com/embed/IWS9K_rxmOY?rel=0" frameborder="0" allowfullscreen="" allow="autoplay; encrypted-media"></iframe></div> </div> -->
-        <br>
-      </section>
-      <section class="container">
+            {{ $posts := (where .Site.Data.appearances ".eventDate" "asc") }}
+            {{ if gt (len $posts) 0 }}
+            <h2>Up next</h2>
+            <ul class="item-appearance-list">
+              {{ range sort .Site.Data.appearances ".eventDate" "asc" }}
+              {{ if gt (time .eventDate).Unix now.Unix   }}
+              {{ if eq (time .eventDate).Year 2022   }}
+              {{ partial "_appearance_li.html" . }}
+              {{ end }}
+              {{ end }}
+              {{ end }}
+            </ul>
+            {{ end }}
+            <div>
+              <h3>Video of my talk at
+                <a href="https://2019.leadingdesignconf.com/newyork">Leading Design 2019 (New York) </a>
+              </h3>
+              <br>
+              <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe title="talk-video" src="https://player.vimeo.com/video/350720470?title=0&byline=0&portrait=0"
+                  style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                  webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"
+                  allowfullscreen="allowfullscreen"></iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+              <!-- <div class="video"> <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe title="talk-video" src="https://www.youtube.com/embed/IWS9K_rxmOY?rel=0" frameborder="0" allowfullscreen="" allow="autoplay; encrypted-media"></iframe></div> </div> -->
+              <br>
+            </div>
+            <div>
         <h2>Past events I've spoken at</h2>
         <h3>2021</h3>
         <ul class="item-appearance-list">
@@ -144,24 +158,30 @@
           {{ end }}
           {{ end }}
         </ul>
+      </div>
+          </div>
+      
       </section>
-      <section id="conferences" class="container ">
-        <h2>Organising Conferences</h2>
+      <section id="conferences" class="section-grid ">
+        <h2 class="section-heading">Organising Conferences</h2>
+        <div class="section-content">
         <p>I founded and ❤️ organising
           <a href="https://pixelup.co.za">Pixel Up!</a>
           a UX and design conference. These events exist to help bridge the gap between designers and developers in Africa with those from around the world.
         </p>
+
+        </div>
       </section>
-      <section id="9-to-5" class="container">
-        <h2>Design leadership</h2>
+      <section id="9-to-5" class="section-grid">
+        <h2 class="section-heading">Design leadership</h2>
+        <div class="section-content">
         <p>I hang with the Shopify Balance UX leadership team at
           <a href="https://shopify.com">Shopify</a>, where we’re building next-generation ecommerce tools that make commerce easier for everyone. In a past life, in South Africa, I led the experience design team at
           <a href="https://standardbank.co.za">Standard Bank Group</a>, Africa's largest bank.
         </p>
         </ul>
+        </div>
       </section>
-    </main>
-  </div>
 </div>
 
 {{ partial "default_foot.html" . }}

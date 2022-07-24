@@ -9,7 +9,7 @@
 @import "modules/nav";
 @import "modules/header";
 @import "modules/footer";
-@import "modules/show-grid";
+@import "modules/section-grid";
 @import "modules/avatar";
 @import "modules/blog";
 
@@ -49,11 +49,12 @@
 }
 .item-appearance-list,
 .lie-list {
+  position: relative;
   margin-bottom: 2rem;
   li::before {
     position: absolute;
-    left: -1ch;
-    content: "– ";
+    left: -3ch;
+    content: "○";
     color: $primaryColour;
     font-weight: bold;
   }
