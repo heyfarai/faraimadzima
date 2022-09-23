@@ -1,16 +1,29 @@
 {{ partial "default_head.html" . }}
-<div class="errythang section">
-  <div class="">
-    <header class="container">
-      <div class="avatar-wrapper">
-        <a href="/">
-            <img data-src="/img/smiley-farai-madzima-3-4.jpg" alt="Farai with a bushy beard, smiling" class="lazy avatar" src="/img/smiley-farai-madzima-3-4--tn.jpg">
-        </a>
-      </div>
+<div class="errythang-grid" id="the-beginning">
+    <div class="avatar-wrapper">
+      <a href="#the-beginning">
+      <img data-src="/img/smiley-farai-madzima-3-4.jpg" alt="Farai with a bushy beard, smiling" class="lazy avatar"
+        src="/img/smiley-farai-madzima-3-4--tn.jpg">
+      </a>
+    </div>
+  <section class="section--with-grid section--no-padding-top">
+    <div class="section-heading">
       <h1>Peace!</h1>
+    </div>
+    <div class="section-content ">
+      <p>
+        <strong>
+          I'm Farai. I <a href="#coaching">coach managers</a> on people leadership, <a href="#lies">write Lies about Leadership</a>, 
+          <a href="#speaking">speak at conferences</a> about managing individuals and teams, and work in <a href="#9-to-5">design leadership</a> at Shopify. A Zimbabwean 🇿🇼 living in Canada 🇨🇦.
+        </strong>
+      </p>
 
-    </header>
-    <main>
+    </div>
+  </section>
+  </div>
+
+
+    {{/*  <main>
         {{ $lies := (where .Site.RegularPages "Type" "lies") }}
         {{ if gt (len $lies) 0 }}
         <section class="container">
@@ -21,6 +34,6 @@
     </main>
   </div>
 
-  </div>
+  </div>  */}}
   {{ partial "default_foot.html" . }}
 </div>

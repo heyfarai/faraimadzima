@@ -13,7 +13,7 @@
     <div class="section-content ">
       <p>
         <strong>
-          I'm Farai. I <a href="#coaching">coach managers</a> on people leadership, <a href="#lies">write Lies about Leadership</a>, 
+          I'm Farai. I <a href="#coaching">coach managers</a> on people leadership, 
           <a href="#speaking">speak at conferences</a> about managing individuals and teams, and work in <a href="#9-to-5">design leadership</a> at Shopify. A Zimbabwean 🇿🇼 living in Canada 🇨🇦.
         </strong>
       </p>
@@ -27,11 +27,12 @@
       <h2 class="section-heading">Coaching</h2>
       <div class="section-content ">
       <p>I work with new and emerging leaders around the world to increase their people leadership skillset and develop effective, inclusive practices that make them better at people stuff.</p>
+      <br>
       <p>Ready to get <i>Good at people stuff?</i> <br><a href="https://calendly.com/farai/coaching-intro">Book a coaching call with me </a>&rarr;</p>
       </div>
     </section>
 
-        {{ $lies := (where .Site.RegularPages "Type" "lies") }}
+        {{/*  {{ $lies := (where .Site.RegularPages "Type" "lies") }}
         {{ if gt (len $lies) 0 }}
         <section id="lies" class="section--with-grid">
           <h2 class="section-heading">Lies about leadership</h2>
@@ -41,7 +42,7 @@
               {{ partial "_lie-list.html" $lies }}
           </div>
         </section>
-        {{ end }}
+        {{ end }}  */}}
 
 
         {{ $posts := (where .Site.RegularPages "Type" "blog") }}
