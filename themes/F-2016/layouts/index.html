@@ -1,44 +1,40 @@
 {{ partial "default_head.html" . }}
-<div class="errythang errythang-grid typeset">
-
-  <header class="section-grid">
-    <div class="section-heading">
-      <div class="avatar-wrapper">
-        <img data-src="/img/smiley-farai-madzima-3-4.jpg" alt="Farai with a bushy beard, smiling" class="lazy avatar"
-          src="/img/smiley-farai-madzima-3-4--tn.jpg">
-      </div>
-      {{/*  <h1 style="text-align:center">Peace!</h1>  */}}
-      <br>
+<div class="errythang-grid">
+    <div class="avatar-wrapper">
+      <img data-src="/img/smiley-farai-madzima-3-4.jpg" alt="Farai with a bushy beard, smiling" class="lazy avatar"
+        src="/img/smiley-farai-madzima-3-4--tn.jpg">
     </div>
-    <div class="section-content single-measure">
-      <p><strong>Peace!</strong></p>
+  <section class="section--with-grid section--no-padding-top">
+    <div class="section-heading">
+      <h1>Peace!</h1>
+    </div>
+    <div class="section-content ">
       <p>
         <strong>
-          I <a href="#coaching">coach managers</a> on people leadership, <a href="#lies">write Lies about Leadership</a>, 
+          I'm Farai. I <a href="#coaching">coach managers</a> on people leadership, <a href="#lies">write Lies about Leadership</a>, 
           <a href="#speaking">speak at conferences</a> about managing individuals and teams, and work in <a href="#9-to-5">design leadership</a> at Shopify. A Zimbabwean 🇿🇼 living in Canada 🇨🇦.
         </strong>
       </p>
 
-
     </div>
-    </header>
+  </section>
+</div>
       <!-- <section class="container"> {{ if gt (len (where .Data.Pages "Type" "blog")) 0 }} <h2>I Recently wrote</h2> {{ range where .Data.Pages "Type" "blog" }} <p> <a href="{{ .Permalink }}">{{ .Title }}</a> <br> <span class="grey">{{ .Date.Format "Jan 2, 2006" }}</span> </p> {{ end }} {{ end }} </section> -->
-     
-    <section id="coaching" class="section-grid">
+  <main class="errythang-grid">
+    <section id="coaching" class="section--with-grid">
       <h2 class="section-heading">Coaching</h2>
-      <div class="section-content single-measure">
-      <p>Maybe you're like me and you want to grow your people leadership skills and unlock the next level of what you can achieve.</p>
+      <div class="section-content ">
       <p>I work with new and emerging leaders around the world to increase their people leadership skillset and develop effective, inclusive practices that make them better at people stuff.</p>
-      <p>Ready to get <i>Good at people stuff?</i> <br><a href="https://fantastical.app/farai/intro-coaching-call">Book a coaching call with me </a>&rarr;</p>
+      <p>Ready to get <i>Good at people stuff?</i> <br><a href="https://calendly.com/farai/coaching-intro">Book a coaching call with me </a>&rarr;</p>
       </div>
     </section>
 
         {{ $lies := (where .Site.RegularPages "Type" "lies") }}
         {{ if gt (len $lies) 0 }}
-        <section id="lies" class="section-grid">
+        <section id="lies" class="section--with-grid">
           <h2 class="section-heading">Lies about leadership</h2>
-          <div class="section-content single-measure">
-            <p>I didn't chose to become a manager. It just happened to me. Early on, I believed lots of misconceptions and lies about leadership that I had picked up through life experience. </p>
+          <div class="section-content ">
+            <p>I didn't chose to become a manager. It just happened to me. Early on, I believed lots of misconceptions and lies about leadership that I had picked up through experience. <br> <br></p>
             <p>Here are some of them:</p>
               {{ partial "_lie-list.html" $lies }}
           </div>
@@ -48,9 +44,9 @@
 
         {{ $posts := (where .Site.RegularPages "Type" "blog") }}
         {{ if gt (len $posts) 0 }}
-        <section id="blog" class="section-grid">
+        <section id="blog" class="section--with-grid">
             <h2 class="section-heading">Read my mind</h2>
-          <div class="section-content single-measure">
+          <div class="section-content ">
             <ul class="module-blog-list">
             {{ range (where .Site.RegularPages "Type" "blog" | first 10) }}
                 <li>
@@ -62,9 +58,9 @@
             </div>
         </section>
         {{ end }}
-      <section id="speaking" class="section-grid">
+      <section id="speaking" class="section--with-grid">
         <h2 class="section-heading">Speaking</h2>
-          <div class="section-content single-measure">
+          <div class="section-content ">
             <p>I speak around the world and online. These days I'm focussed on talking about
             <strong>working effectively in multicultural teams</strong>. If you’d like me to speak at a public or private
             event, catch me on
@@ -84,6 +80,7 @@
             </ul>
             {{ end }}
             <div>
+              <br>
               <h3>Video of my talk at
                 <a href="https://2019.leadingdesignconf.com/newyork">Leading Design 2019 (New York) </a>
               </h3>
@@ -99,8 +96,8 @@
               <br>
             </div>
             <div>
-        <h2>Past events I've spoken at</h2>
-        <h3>2021</h3>
+        <h3>Past events I've spoken at</h3>
+        <h4>2021</h4>
         <ul class="item-appearance-list">
           {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
           {{ if lt (time .eventDate).Unix now.Unix   }}
@@ -110,7 +107,7 @@
           {{ end }}
           {{ end }}
         </ul>
-        <h3>2020</h3>
+        <h4>2020</h4>
         <ul class="item-appearance-list">
           {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
           {{ if lt (time .eventDate).Unix now.Unix   }}
@@ -120,7 +117,7 @@
           {{ end }}
           {{ end }}
         </ul>
-        <h3>2019</h3>
+        <h4>2019</h4>
         <ul class="item-appearance-list">
           {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
           {{ if lt (time .eventDate).Unix now.Unix   }}
@@ -130,7 +127,7 @@
           {{ end }}
           {{ end }}
         </ul>
-        <h3>2018</h3>
+        <h4>2018</h4>
         <ul class="item-appearance-list">
           {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
           {{ if lt (time .eventDate).Unix now.Unix   }}
@@ -140,7 +137,7 @@
           {{ end }}
           {{ end }}
         </ul>
-        <h3>2017</h3>
+        <h4>2017</h4>
         <ul class="item-appearance-list">
           {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
           {{ if eq (time .eventDate).Year 2017   }}
@@ -148,7 +145,7 @@
           {{ end }}
           {{ end }}
         </ul>
-        <h3>2016</h3>
+        <h4>2016</h4>
         <ul class="item-appearance-list">
           {{ range sort .Site.Data.appearances ".eventDate" "desc" }}
           {{ if eq (time .eventDate).Year 2016   }}
@@ -160,7 +157,7 @@
           </div>
       
       </section>
-      <section id="conferences" class="section-grid ">
+      <section id="conferences" class="section--with-grid ">
         <h2 class="section-heading">Organising Conferences</h2>
         <div class="section-content">
         <p>I founded and ❤️ organising
@@ -170,7 +167,7 @@
 
         </div>
       </section>
-      <section id="9-to-5" class="section-grid">
+      <section id="9-to-5" class="section--with-grid">
         <h2 class="section-heading">Design leadership</h2>
         <div class="section-content">
         <p>I hang with the Shopify Balance UX leadership team at
@@ -180,6 +177,7 @@
         </ul>
         </div>
       </section>
+    </main>
 </div>
 
 {{ partial "default_foot.html" . }}

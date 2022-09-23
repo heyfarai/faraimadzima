@@ -1,7 +1,7 @@
 <ul class="module-blog-list lie-list">
   {{ range (. | first 10) }}
   <li class="lie-list-item">
-    <span class="lie-id">#{{ .Params.id }}</span>
+    <span class="lie-id"><em>#{{ .Params.id }}</em></span>
     <a class="blog-post-title" href="{{ .Permalink }}"> {{ .Params.lie }}</a>
   </li>
   {{ end }}

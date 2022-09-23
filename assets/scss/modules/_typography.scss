@@ -1,0 +1,322 @@
+// Typography
+// ---------------------------------------
+@charset 'UTF-8';
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-Var.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Setting root sizes and base styles.
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+}
+
+// Site-wide base styles.
+body {
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: clamp(22px, 3.5vw, 30px);
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+// Links.
+a {
+  color: $linkColour;
+  text-decoration: none;
+  transition: color 0.1s, background-color 0.1s;
+  outline: 0;
+  transition: all 0.1s ease-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: lighten($grey, 35%);
+    text-decoration: none;
+  }
+}
+
+// Styles for typeset text.
+// Nice underlines for text links.
+p a,
+li a {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    $primaryColour 50%
+  );
+  background-position: 0 93%;
+  background-repeat: repeat-x;
+  background-size: 100% 0.25rem;
+  text-shadow: 0.1rem 0 $backgroundColour, 0.15rem 0 $backgroundColour,
+    -0.1rem 0 $backgroundColour, -0.15rem 0 $backgroundColour;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 100%,
+      $grey 50%
+    );
+  }
+}
+
+// Paragraphs. OpenType ligatures and oldstyle figures enabled if available.
+p {
+}
+
+// Headings. OpenType ligatures, discretionary ligatures and lining figures enabled if available.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $headingColour;
+  letter-spacing: -1.5px;
+  font-weight: bold;
+}
+
+// Heading level 1.
+h1 {
+  color: $black;
+  font-size: clamp(34px, 8vw, 50px);
+  line-height: 1em;
+  max-width: 25ch;
+  font-weight: 700;
+  margin-bottom: calc(0.5em + 1vh);
+  transition: 0.5s;
+}
+
+// Heading level 2.
+h2 {
+  font-size: clamp(30px, 8vw, 50px);
+  line-height: 1em;
+  max-width: 25ch;
+  font-weight: 700;
+  margin-bottom: calc(0.5em + 1vh);
+  transition: 0.5s;
+}
+
+// Heading level 3.
+h3 {
+}
+
+// Heading level 4.
+h4 {
+}
+
+// Heading level 5.
+h5 {
+}
+
+// Heading level 6.
+h6 {
+}
+
+// Lists.
+ul,
+ol {
+  li {
+    margin-bottom: 1rem;
+    ol,
+    ul {
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+    }
+  }
+}
+
+// Ordered lists.
+ol {
+  list-style-type: none;
+
+  li {
+    counter-increment: top-level;
+
+    &:before {
+      content: counter(top-level) ".";
+      font-feature-settings: "lnum", "tnum";
+      margin-left: -3rem;
+      position: absolute;
+      text-align: right;
+      width: 2em;
+    }
+
+    ul {
+      li {
+        &:before {
+          content: "";
+        }
+
+        ol {
+          li {
+            counter-increment: alt-level;
+
+            &:before {
+              content: counter(alt-level) ".";
+            }
+          }
+        }
+      }
+    }
+
+    ol {
+      li {
+        counter-increment: sub-level;
+
+        &:before {
+          content: counter(top-level) "." counter(sub-level);
+        }
+
+        ul {
+          li {
+            &:before {
+              content: "";
+            }
+          }
+        }
+
+        ol {
+          li {
+            counter-increment: sub-sub-level;
+
+            &:before {
+              content: counter(top-level) "." counter(sub-level) "."
+                counter(sub-sub-level);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Definition lists.
+dl {
+  dt,
+  dd {
+    font-feature-settings: "kern", "onum", "liga";
+    margin-left: 2rem;
+  }
+
+  dt {
+  }
+
+  dd + dt {
+    padding-top: 1rem;
+  }
+}
+
+// Tables.
+table {
+  font-feature-settings: "liga", "lnum", "tnum", "kern";
+  font-style: normal;
+  width: 100%;
+
+  thead {
+    th {
+      padding-bottom: 1px;
+    }
+  }
+}
+
+// Bold.
+b,
+strong,
+.bold {
+  font-weight: bold;
+}
+
+// Italic.
+em,
+i,
+.italic {
+  font-style: italic;
+}
+
+// Caption and inline small text.
+small,
+.caption {
+  font-style: normal;
+}
+
+small {
+  line-height: 1rem;
+}
+
+.caption {
+  color: $captionColour;
+}
+
+// Quotes.
+blockquote {
+}
+
+// Horizontal rule.
+hr {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    $captionColour 50%
+  );
+  background-position: 0 50%;
+  background-repeat: repeat-x;
+  background-size: 100% 0.15rem;
+  border: 0;
+  margin: 0;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+// Code block.
+code,
+pre {
+  background-color: $codeBackgroundColour;
+}
+
+pre {
+  display: block;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+code {
+  line-height: 1rem;
+}
+
+// Letter space those capitals people, Jan Tschichold would be proud.
+.upper {
+  font-kerning: normal;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+// Real small caps.
+.small-caps {
+  font-feature-settings: "smcp", "kern";
+  font-kerning: normal;
+  letter-spacing: 0.1rem;
+}
+
+// Consistent height numbers with OpenType.
+.lining-numerals {
+  font-feature-settings: "lnum", "kern";
+}
+
+// Ascending and descending numbers with OpenType.
+.oldstyle-numerals {
+  font-feature-settings: "onum", "kern";
+}

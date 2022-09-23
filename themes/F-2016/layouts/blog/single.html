@@ -1,27 +1,30 @@
-
-  {{ partial "default_head.html" . }}
-        {{ $author := .Params.author }}
-        {{ $authorSlug :=  $author | urlize  }}
-        <div class="errythang section typeset">
-            <div class="single-measure">
-                <section class="container">
-                    <div class="avatar-wrapper">
-                        <a href="/">
-                            <img data-src="/img/smiley-farai-madzima-3-4.jpg" alt="Farai with a bushy beard, smiling" class="lazy avatar" src="/img/smiley-farai-madzima-3-4--tn.jpg">
-                        </a>
-                    </div>
-                </section>
-                <div class="content-wrapper container">
-                    <h1 class="post__header">
-                        {{ .Title }}
-                    </h1>
-                    <p class="post__meta">By Farai Madzima on {{ .PublishDate.Format "January 2, 2006" }} — {{ .ReadingTime }} minute read</p>
-                    <article class="post__content">
-                        {{ .Content }}
-                        <div class="article__footer">
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-  {{ partial "default_foot.html" . }}
+{{ partial "default_head.html" . }} {{ $author := .Params.author }} {{
+$authorSlug := $author | urlize }}
+<div class="errythang section">
+  <div class="">
+    <section class="container">
+      <div class="avatar-wrapper">
+        <a href="/">
+          <img
+            data-src="/img/smiley-farai-madzima-3-4.jpg"
+            alt="Farai with a bushy beard, smiling"
+            class="lazy avatar"
+            src="/img/smiley-farai-madzima-3-4--tn.jpg"
+          />
+        </a>
+      </div>
+    </section>
+    <div class="content-wrapper container">
+      <h1 class="post__header">{{ .Title }}</h1>
+      <p class="post__meta">
+        By Farai Madzima on {{ .PublishDate.Format "January 2, 2006" }} — {{
+        .ReadingTime }} minute read
+      </p>
+      <article class="post__content">
+        {{ .Content }}
+        <div class="article__footer"></div>
+      </article>
+    </div>
+  </div>
+</div>
+{{ partial "default_foot.html" . }}
