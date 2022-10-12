@@ -8,6 +8,7 @@
   justify-content: space-between;
   margin: 0 auto;
   position: relative;
+  transition: all 0.5s ease-out;
   @media only screen and (min-width: 600px) {
     max-width: none;
     grid-column-gap: 40px;
