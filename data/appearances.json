@@ -1,5 +1,21 @@
 [
   {
+    "eventName": "CanUX",
+    "place": "Ottawa, Canada",
+    "talk": "The Only One of Your Kind in the Room: Perils and Opportunities",
+    "eventDate": "2022-11-15",
+    "role": "Speaker",
+    "url": "https://canux.io/farai-madzima/"
+  },
+  {
+    "eventName": "Amuse UX",
+    "place": "Budapest, Hungary",
+    "talk": "Designing your 1:1",
+    "eventDate": "2022-10-06",
+    "role": "Speaker",
+    "url": "https://amuseconf.com/speaker/farai-madzima"
+  },
+  {
     "eventName": "Mind the Product",
     "place": "San Francisco / Online",
     "talk": "Working with strangers, well",
@@ -14,7 +30,8 @@
     "eventDate": "2020-10-27",
     "role": "Speaker",
     "url": "https://aneventapart.com/event/online-1020#s17397"
-  },{
+  },
+  {
     "eventName": "Clarity2020",
     "place": "Online",
     "talk": "Designing teams. Designing systems.",
